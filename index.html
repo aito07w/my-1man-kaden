@@ -1,135 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <!-- 基本 -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO -->
-  <title>1万円家電の殿堂｜1万円以下の家電・PCレビューサイト</title>
-  <meta name="description" content="1万円以下で買える家電・PCを厳選レビュー。安いけど失敗しない、コスパ重視の安心レビューサイト。">
-  <meta name="keywords" content="1万円以下, 家電, PC, ガジェット, レビュー, 格安, コスパ">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="1万円家電の殿堂">
-
-  <!-- OGP -->
-  <meta property="og:title" content="1万円家電の殿堂">
-  <meta property="og:description" content="1万円以下で買える家電・PCを厳選レビュー">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ja_JP">
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1万円家電の殿堂 | コスパ最強中古ガジェット専門データベース</title>
+    <meta name="description" content="予算1万円で買えるPC・スマホ・タブレットを徹底検証。ChromeOS Flex活用術や中古選びの落とし穴まで、専門家が詳細に解説します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+        body { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
 </head>
+<body class="bg-gray-50 text-gray-900">
 
-<body class="bg-white text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-[#0f172a] text-white">
-    <div class="max-w-7xl mx-auto px-4 py-6">
-      <h1 class="text-2xl md:text-3xl font-bold tracking-wide">
-        1万円家電の殿堂
-      </h1>
-      <p class="text-sm text-slate-300 mt-1">
-        安い。でも失敗しない。
-      </p>
-    </div>
-  </header>
-
-  <!-- Search -->
-  <section class="max-w-7xl mx-auto px-4 py-8">
-    <div class="flex justify-center">
-      <input
-        type="text"
-        placeholder="商品名・カテゴリで検索（ダミー）"
-        class="w-full max-w-xl border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0f172a]"
-      >
-    </div>
-  </section>
-
-  <!-- Main -->
-  <main class="max-w-7xl mx-auto px-4 pb-16">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-      <!-- Card 1 -->
-      <article class="border rounded-xl shadow-sm hover:shadow-md transition bg-white">
-        <img
-          src="https://via.placeholder.com/600x400?text=USB+Keyboard"
-          alt="USB接続 有線キーボード"
-          class="rounded-t-xl w-full object-cover"
-        >
-        <div class="p-5">
-          <h2 class="text-lg font-semibold">
-            有線USBキーボード
-          </h2>
-          <p class="text-sm text-gray-600 mt-2">
-            フルサイズ / 日本語配列 / 防滴設計
-          </p>
-          <p class="text-xl font-bold text-[#0f172a] mt-3">
-            ¥1,480
-          </p>
-          <button class="mt-4 w-full bg-[#0f172a] text-white py-2 rounded-lg hover:bg-slate-800 transition">
-            レビューを見る
-          </button>
+    <header class="bg-slate-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-tighter">
+                <a href="/" class="hover:text-blue-400">1万円家電の<span class="text-blue-400">殿堂</span></a>
+            </h1>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#pc" class="hover:text-blue-400">ノートPC</a>
+                <a href="#mobile" class="hover:text-blue-400">スマホ</a>
+                <a href="#guide" class="hover:text-blue-400">選び方ガイド</a>
+            </nav>
         </div>
-      </article>
+    </header>
 
-      <!-- Card 2 -->
-      <article class="border rounded-xl shadow-sm hover:shadow-md transition bg-white">
-        <img
-          src="https://via.placeholder.com/600x400?text=Bluetooth+Earphones"
-          alt="Bluetoothワイヤレスイヤホン"
-          class="rounded-t-xl w-full object-cover"
-        >
-        <div class="p-5">
-          <h2 class="text-lg font-semibold">
-            ワイヤレスイヤホン
-          </h2>
-          <p class="text-sm text-gray-600 mt-2">
-            Bluetooth5.3 / 最大20時間再生
-          </p>
-          <p class="text-xl font-bold text-[#0f172a] mt-3">
-            ¥2,980
-          </p>
-          <button class="mt-4 w-full bg-[#0f172a] text-white py-2 rounded-lg hover:bg-slate-800 transition">
-            レビューを見る
-          </button>
+    <section class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">「1万円」で、日常をアップグレードする。</h2>
+            <p class="text-lg opacity-90 mb-8">最新機種は必要ない。賢い選択で、最高のコスパを手に入れよう。</p>
+            <div class="max-w-xl mx-auto bg-white rounded-full p-1 flex shadow-2xl">
+                <input type="text" placeholder="例：Let's note, iPhone 8..." class="flex-grow px-6 py-3 text-gray-800 rounded-full focus:outline-none">
+                <button class="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full font-bold transition">検索</button>
+            </div>
         </div>
-      </article>
+    </section>
 
-      <!-- Card 3 -->
-      <article class="border rounded-xl shadow-sm hover:shadow-md transition bg-white">
-        <img
-          src="https://via.placeholder.com/600x400?text=Mini+Fan"
-          alt="USB卓上ミニ扇風機"
-          class="rounded-t-xl w-full object-cover"
-        >
-        <div class="p-5">
-          <h2 class="text-lg font-semibold">
-            USB卓上扇風機
-          </h2>
-          <p class="text-sm text-gray-600 mt-2">
-            静音設計 / 風量3段階調整
-          </p>
-          <p class="text-xl font-bold text-[#0f172a] mt-3">
-            ¥1,980
-          </p>
-          <button class="mt-4 w-full bg-[#0f172a] text-white py-2 rounded-lg hover:bg-slate-800 transition">
-            レビューを見る
-          </button>
+    <main class="container mx-auto px-4 py-12">
+        <h3 class="text-2xl font-bold mb-8 flex items-center">
+            <span class="w-2 h-8 bg-blue-600 mr-3"></span>
+            今週のコスパ最強ガジェット
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 border border-gray-100">
+                <div class="h-48 bg-gray-200 flex items-center justify-center">
+                    <i class="fas fa-laptop fa-4x text-gray-400"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold bg-blue-100 text-blue-600 px-2 py-1 rounded uppercase">Laptop</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">【1万円】CF-SZ5は2026年でも現役か？ChromeOS Flex化で爆速化！</h4>
+                    <p class="text-gray-600 text-sm mb-4">第6世代Core i5搭載の名機を徹底レビュー。実際の動作速度を動画で解説...</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-orange-600 font-bold text-lg">¥8,800〜</span>
+                        <a href="#" class="text-blue-600 font-bold hover:underline">詳細を見る →</a>
+                    </div>
+                </div>
+            </article>
+
+            </div>
+    </main>
+
+    <footer class="bg-slate-900 text-gray-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2026 1万円家電の殿堂 All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 text-sm">
+                <a href="#" class="hover:text-white">免責事項</a>
+                <a href="#" class="hover:text-white">プライバシーポリシー</a>
+                <a href="#" class="hover:text-white">お問い合わせ</a>
+            </div>
         </div>
-      </article>
-
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-100 border-t">
-    <div class="max-w-7xl mx-auto px-4 py-6 text-sm text-gray-500 text-center">
-      © 2026 1万円家電の殿堂
-    </div>
-  </footer>
+    </footer>
 
 </body>
 </html>
