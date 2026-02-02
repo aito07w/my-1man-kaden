@@ -3,332 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【究極分析】9,999円のNEC VersaProは2026年も"買い"か？Harukisuの評判とTaiki流・極限軽量化術 | 1万円家電の殿堂</title>
-    <meta name="description" content="楽天市場「Harukisu」で不動の人気を誇る9,999円NEC製PCを徹底解剖。Core i5第4世代と4GBメモリの限界を突破するTaikiさんの教えと、後悔しないための全知識を公開。">
+    <title>【徹底調査】Harukisuの9,999円NECノートは買いか？スペックと口コミから判明した真実 | 1万円家電の殿堂</title>
+    <meta name="description" content="楽天市場で人気のNEC VersaPro（9,999円）を、スペックと700件の口コミから徹底分析。「買っても大丈夫な人」と「買ってはいけない人」を正直に解説します。">
     
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+        body { font-family: 'Noto Sans JP', sans-serif; }
         
-        :root {
-            --primary-blue: #1e40af;
-            --accent-orange: #fb923c;
-        }
-
-        body { 
-            font-family: 'Noto Sans JP', sans-serif; 
-            line-height: 1.8; 
-            color: #334155; 
-            background-color: #f8fafc;
-        }
-
-        /* 視覚的強調のためのカスタムクラス */
-        .glass-morphism {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .article-h2 {
-            position: relative;
-            padding: 1.25rem 1.5rem;
-            background: white;
-            border-left: 8px solid var(--primary-blue);
-            font-weight: 900;
-            font-size: 1.75rem;
-            color: #0f172a;
-            margin-top: 4.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-            border-radius: 0 0.5rem 0.5rem 0;
-        }
-
-        .article-h3 {
-            display: flex;
-            align-items: center;
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: #1e3a8a;
+        /* 見出しのデザイン設定 */
+        .prose h2 {
+            background: linear-gradient(to right, #eff6ff, #ffffff);
+            border-left: 5px solid #2563eb; /* 青い線の太さと色 */
+            padding: 0.75rem 1rem;
             margin-top: 3rem;
             margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e293b;
         }
-
-        .article-h3::before {
-            content: "";
-            display: inline-block;
-            width: 1.2rem;
-            height: 1.2rem;
-            background-color: var(--accent-orange);
-            margin-right: 0.75rem;
-            clip-path: polygon(100% 50%, 0 0, 0 100%);
+        .prose h3 {
+            border-bottom: 2px solid #e2e8f0; /* 下線の太さと色 */
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #334155;
         }
-
-        /* 田舎団子さんリスペクト：ハンターの独り言 */
-        .author-note {
-            background-color: #fffaf5;
-            border: 2px dashed #fdba74;
-            border-radius: 1.5rem;
-            padding: 1.5rem;
-            margin: 2.5rem 0;
-            position: relative;
-            transition: transform 0.3s ease;
-        }
-        .author-note:hover { transform: translateY(-2px); }
-        .author-note::before {
-            content: "🛠️ ハンターの解析ログ";
-            position: absolute;
-            top: -14px;
-            left: 24px;
-            background: #f97316;
-            color: white;
-            padding: 2px 14px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        /* スペック表の洗練 */
-        .spec-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 1rem; overflow: hidden; }
-        .spec-table th { background-color: #f1f5f9; width: 35%; color: #475569; font-weight: 700; text-align: left; }
-        .spec-table td, .spec-table th { padding: 1rem 1.25rem; border: 1px solid #e2e8f0; }
-
-        /* YouTube誘導セクション */
-        .youtube-card {
-            background: #000;
-            border-radius: 1.5rem;
-            padding: 2rem;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin: 3rem 0;
-            border: 4px solid #ff0000;
-        }
+        
+        /* メリット(緑)・デメリット(赤)ボックスの色設定 */
+        .merit-box { border: 2px solid #bbf7d0; background-color: #f0fdf4; }
+        .demerit-box { border: 2px solid #fecaca; background-color: #fef2f2; }
     </style>
 </head>
+<body class="bg-gray-50 text-slate-800 antialiased">
 
-<body class="antialiased text-slate-800">
-
-    <header class="glass-morphism sticky top-0 z-50 border-b border-slate-200">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center max-w-7xl">
-            <div class="text-2xl font-black tracking-tighter text-slate-900">
-                <a href="#" class="flex items-center gap-2">
-                    <i class="fas fa-microchip text-blue-600 animate-pulse"></i>
-                    <span>1万円家電の<span class="text-blue-600">殿堂</span></span>
-                </a>
+    <header class="bg-slate-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-bold tracking-tighter">
+                <a href="index.html" class="hover:text-blue-400 transition">1万円家電の<span class="text-blue-400">殿堂</span></a>
             </div>
-            <nav class="hidden md:flex space-x-8 font-bold text-sm">
-                <a href="#specs" class="text-slate-600 hover:text-blue-600 transition">スペック解析</a>
-                <a href="#tuning" class="text-slate-600 hover:text-blue-600 transition">Taiki流設定</a>
-                <a href="#verdict" class="text-slate-600 hover:text-blue-600 transition">最終判定</a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-blue-400 transition">ホーム</a>
+                <a href="index.html#pc" class="hover:text-blue-400 transition">レビュー一覧</a>
             </nav>
         </div>
     </header>
+    <main class="container mx-auto px-4 py-8 max-w-5xl">
+        
+        <nav class="text-xs text-gray-500 mb-4 flex items-center">
+            <a href="index.html" class="hover:underline">ホーム</a>
+            <i class="fas fa-chevron-right mx-2 text-gray-300"></i>
+            <span class="truncate">NEC VersaPro (Harukisu版) 検証</span>
+        </nav>
 
-    <main class="container mx-auto px-4 py-10 max-w-7xl">
-        <div class="flex flex-col lg:flex-row gap-12">
+        <div class="flex flex-col lg:flex-row gap-8">
             
-            <div class="lg:w-2/3 xl:w-3/4">
-                <article class="bg-white rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden">
+            <article class="lg:w-3/4 bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden prose max-w-none">
+                
+                <div class="bg-slate-800 text-white p-6 md:p-10 text-center relative overflow-hidden">
+                    <span class="relative z-10 bg-blue-600 text-xs font-bold px-3 py-1 rounded-full mb-4 inline-block tracking-wide">検証・分析</span>
+                    <h1 class="relative z-10 text-2xl md:text-3xl font-bold leading-tight mb-4">
+                        9,999円のOffice付きPCは"地雷"か？<br>楽天市場「Harukisu」のVersaProを徹底調査
+                    </h1>
+                    <div class="relative z-10 flex justify-center items-center text-xs md:text-sm text-gray-400 space-x-4">
+                        <span><i class="far fa-clock mr-1"></i>2026.01.28 更新</span>
+                        <span><i class="fas fa-search mr-1"></i>調査：1万円家電ハンター</span>
+                    </div>
+                </div>
+
+                <div class="p-6 md:p-10 leading-relaxed text-gray-700">
                     
-                    <div class="bg-slate-900 p-8 md:p-20 text-center text-white relative overflow-hidden">
-                        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-                            <div class="absolute inset-0" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
-                        </div>
-                        <div class="inline-block px-6 py-2 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-400 text-xs font-black mb-8 tracking-[0.2em] uppercase">
-                            Deep Dive Report 2026
-                        </div>
-                        <h1 class="text-3xl md:text-6xl font-black leading-[1.15] mb-10">
-                            9,999円のOffice付きPCは<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">"救世主"か"ゴミ"か。</span>
-                        </h1>
-                        <div class="flex justify-center items-center gap-8 text-sm font-medium text-slate-400">
-                            <span><i class="far fa-calendar-check mr-2 text-blue-400"></i>2026.02.02 Last Update</span>
-                            <span><i class="fas fa-fingerprint mr-2 text-blue-400"></i>Verified by Hunter</span>
-                        </div>
-                    </div>
+                    <p class="mb-6 font-bold text-lg text-slate-800">
+                        「1万円以下で、まともに動くWindows PCなんて存在するのか？」
+                    </p>
+                    <figure class="my-8 text-center">
+    <img src="0-nec9999-image.png" alt="NEC VersaPro 9,999円セット" class="w-full max-w-sm mx-auto rounded-lg shadow-lg border border-gray-200">
+    <figcaption class="text-xs text-gray-500 mt-2">出典：楽天市場 Harukisu 商品ページ</figcaption>
+</figure>
+                    <p class="mb-6">
+                        楽天市場のランキング常連店<b>「Harukisu（ハルキス）」</b>で販売されているNEC VersaPro。レビュー数は700件を超え、評価も4.2以上です。<br>
+                        しかし、本当に使えるのでしょうか？ 本記事では、<b>実機を購入する前に知っておくべき「スペックの真実」と「ユーザーの生の声」</b>を徹底的に分析・まとめました。
+                    </p>
 
-                    <div class="p-8 md:p-16">
-                        <p class="text-xl md:text-2xl font-bold text-slate-800 mb-10 leading-relaxed italic">
-                            「安さには理由がある。だが、その理由を『技術』でねじ伏せることができるとしたら？」
-                        </p>
-
-                        <div class="author-note">
-                            <p class="text-sm font-medium leading-loose">
-                                楽天市場「Harukisu」の9,999円PC。2026年になってもその勢いは衰えません。しかし、初心者がそのまま使うとメモリ4GBの壁に絶望します。今回は、あの**PCの先生Taikiさん**の知恵を借り、この「鉄屑一歩手前」を「現役マシン」に変える手順を徹底的に掘り下げます。
-                            </p>
-                        </div>
-
-                        <h2 class="article-h2" id="specs">1. ハードウェアの「超詳細」現実解剖</h2>
-                        <div class="overflow-x-auto mb-10 shadow-sm rounded-xl border border-slate-200">
-                            <table class="spec-table">
-                                <thead>
-                                    <tr>
-                                        <th class="bg-slate-100">項目</th>
-                                        <th class="bg-slate-50">詳細スペックと2026年時点の評価</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th>CPU</th>
-                                        <td>
-                                            <span class="font-black text-blue-700">Intel Core i5-4200M (2.50GHz)</span><br>
-                                            <span class="text-xs text-slate-500">Haswell世代。2コア/4スレッド。ブラウジングやExcelなら未だに快適なクロック数を維持。</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>メモリ</th>
-                                        <td>
-                                            <span class="font-black text-red-600">4GB DDR3</span><br>
-                                            <span class="text-xs text-slate-500 underline decoration-red-300">致命的な弱点。</span>Windows 11の推奨要件を満たさないため、軽量化設定が「必須」となります。
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>ストレージ</th>
-                                        <td>
-                                            <span class="font-black text-green-600">新品 SSD 128GB (SATA接続)</span><br>
-                                            <span class="text-xs text-slate-500">Harukisuの強み。中古HDDではなく新品SSDのため、OSの起動だけは最新PC並みに速い。</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>OS</th>
-                                        <td>Windows 10 Pro / Home (11へ無償アップグレード対象外だがショップ側で対応済)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Office</th>
-                                        <td>
-                                            <span class="font-black text-orange-600">Microsoft Office 2019 搭載</span><br>
-                                            <span class="text-xs text-slate-500">認証済み。これだけでPC代の元が取れる計算。プロ向け作業には不向きだが事務用には完璧。</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <h2 class="article-h2" id="tuning">2. Taiki流・極限軽量化チューニング</h2>
-                        <p class="mb-6 font-bold text-slate-700">リンクが消えていたTaikiさんの知恵をここに集約。メモリ4GBでWindowsを快適にする秘儀です。</p>
-                        
-                        <div class="space-y-6 mb-12">
-                            <div class="bg-slate-50 rounded-2xl p-6 border-l-4 border-blue-600">
-                                <h4 class="font-black text-lg mb-2"><i class="fas fa-bolt text-yellow-500 mr-2"></i>STEP 1：視覚効果の無効化</h4>
-                                <p class="text-sm text-slate-600 mb-4">「システムの詳細設定」→「パフォーマンス設定」から「パフォーマンスを優先する」を選択。これにより、微細なアニメーションに使用されるリソースを全て計算処理へ回します。</p>
-                                <div class="bg-white p-3 rounded border border-slate-200 font-mono text-xs text-blue-600">
-                                    Win + R キー ➔ "sysdm.cpl" と入力 ➔ 詳細設定タブ ➔ 設定
-                                </div>
-                            </div>
-
-                            <div class="bg-slate-50 rounded-2xl p-6 border-l-4 border-blue-600">
-                                <h4 class="font-black text-lg mb-2"><i class="fas fa-Power-off text-red-500 mr-2"></i>STEP 2：スタートアップの厳選</h4>
-                                <p class="text-sm text-slate-600">タスクマネージャーの「スタートアップ」タブから、Microsoft EdgeやOneDrive、Cortana等の「自動起動」を全て無効化します。</p>
-                            </div>
-                        </div>
-
-                        <div class="youtube-card group">
-                            <div class="text-red-600 text-6xl mb-4 group-hover:scale-110 transition-transform">
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                            <h3 class="text-2xl font-black mb-2 text-white">消えたリンクの正体：PCの先生 Taiki</h3>
-                            <p class="text-slate-400 mb-6 px-4">「中古PCを爆速にする方法」の第一人者。彼の動画を見ずして、この9,999円PCを買うのは無謀と言わざるを得ません。</p>
-                            <a href="https://www.youtube.com/@pc-teacher" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full transition-all flex items-center gap-3">
-                                <span>公式チャンネルで最新設定を見る</span>
-                                <i class="fas fa-external-link-alt text-sm"></i>
-                            </a>
-                            <p class="mt-4 text-[10px] text-slate-500">※YouTubeの仕様変更によりリンクが見づらくなっていましたが、こちらが直通です。</p>
-                        </div>
-
-                        <h2 class="article-h2" id="verdict">3. 結論：このPCの正体は「動くOfficeライセンス」である</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                            <div class="p-8 rounded-3xl bg-emerald-50 border-2 border-emerald-200">
-                                <h4 class="text-emerald-800 font-black text-xl mb-4 flex items-center">
-                                    <i class="fas fa-check-circle mr-2"></i>即ポチ推奨
-                                </h4>
-                                <ul class="space-y-3 text-sm font-medium text-emerald-700">
-                                    <li>・大学のレポート提出だけが目的</li>
-                                    <li>・確定申告専用マシンが欲しい</li>
-                                    <li>・Taikiさんの動画を一時停止しながら設定を楽しめる</li>
-                                    <li>・キーボードのテカリを「努力の結晶」と思える</li>
-                                </ul>
-                            </div>
-                            <div class="p-8 rounded-3xl bg-rose-50 border-2 border-rose-200">
-                                <h4 class="text-rose-800 font-black text-xl mb-4 flex items-center">
-                                    <i class="fas fa-times-circle mr-2"></i>絶対回避推奨
-                                </h4>
-                                <ul class="space-y-3 text-sm font-medium text-rose-700">
-                                    <li>・YouTubeを見ながらExcelを同時並行したい</li>
-                                    <li>・カフェの電源なしで3時間以上使いたい</li>
-                                    <li>・動画編集やゲーム（たとえ2Dでも）を考えている</li>
-                                    <li>・「設定」よりも「安心」を金で買いたい</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="mt-16 text-center">
-                            <a href="https://item.rakuten.co.jp/harukisu/nt-tb-b453-cel-4-128-10k/" target="_blank" class="inline-flex flex-col items-center group">
-                                <div class="bg-orange-600 hover:bg-orange-700 text-white font-black py-8 px-16 rounded-2xl text-3xl transition-all transform group-hover:-translate-y-2 shadow-[0_20px_50px_rgba(234,88,12,0.3)] flex items-center gap-4">
-                                    <span>Harukisuで真実を確認する</span>
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <span class="mt-6 text-slate-400 font-bold animate-bounce">※現在、注文が殺到している可能性があります</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <aside class="lg:w-1/3 xl:w-1/4">
-                <div class="sticky top-24 space-y-8">
-                    
-                    <div class="bg-white rounded-[2rem] shadow-lg border border-slate-100 p-8 text-center overflow-hidden relative">
-                        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-600 to-cyan-400"></div>
-                        <div class="w-24 h-24 bg-slate-900 rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl ring-4 ring-slate-50">
-                            <i class="fas fa-user-secret text-4xl text-blue-400"></i>
-                        </div>
-                        <h3 class="text-xl font-black text-slate-900 mb-1">1万円家電ハンター</h3>
-                        <p class="text-[10px] tracking-widest text-blue-600 font-black uppercase mb-4">Professional Gear Analyst</p>
-                        <p class="text-xs text-slate-500 leading-relaxed text-left bg-slate-50 p-4 rounded-xl border border-slate-100 italic">
-                            「安い」には「理由」がある。「高い」には「嘘」がある。2026年、情弱を卒業するための情報を忖度抜きで発信。Taiki流チューニングを自ら実践し、9,999円PCでこの記事を執筆中。
-                        </p>
-                    </div>
-
-                    <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-[2rem] p-8 text-white shadow-2xl">
-                        <h4 class="font-black text-sm mb-6 flex items-center gap-2 border-b border-slate-700 pb-4">
-                            <i class="fas fa-exclamation-triangle text-yellow-400"></i>
-                            購入前の3大チェック
-                        </h4>
-                        <ul class="text-xs space-y-4 font-medium opacity-90">
-                            <li class="flex gap-3">
-                                <span class="text-blue-400 font-black">01</span>
-                                <span>バッテリーは「死んでいる」前提で予備電源を確保すること。</span>
-                            </li>
-                            <li class="flex gap-3">
-                                <span class="text-blue-400 font-black">02</span>
-                                <span>天板の傷は「歴戦の勇者の証」と自分に言い聞かせること。</span>
-                            </li>
-                            <li class="flex gap-3">
-                                <span class="text-blue-400 font-black">03</span>
-                                <span>届いたら即、Taikiさんの動画を見ながら「軽量化」を行うこと。</span>
-                            </li>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-10">
+                        <p class="font-bold text-gray-800 mb-3 text-lg border-b pb-2">目次</p>
+                        <ul class="space-y-2 text-blue-600 text-sm md:text-base font-medium list-decimal list-inside">
+                            <li><a href="#specs" class="hover:underline">詳細スペック分析：9,999円の中身</a></li>
+                            <li><a href="#shop" class="hover:underline">店舗評価：Harukisuは信頼できるか</a></li>
+                            <li><a href="#performance" class="hover:underline">性能検証：第4世代Core i5の実力</a></li>
+                            <li><a href="#tuning" class="hover:underline">必須知識：Taiki式軽量化術</a></li>
+                            <li><a href="#proscons" class="hover:underline">総評：買うべき人・やめるべき人</a></li>
                         </ul>
                     </div>
 
+                    <h2 id="specs">1. 詳細スペック分析：9,999円の中身</h2>
+                    <p class="mb-4">販売ページのデータに基づき、このPCの「中身」を整理しました。</p>
+                    
+                    <div class="overflow-x-auto mb-8">
+                        <table class="w-full text-sm text-left border-collapse border border-gray-200">
+                            <tbody>
+                                <tr class="bg-gray-100"><th class="p-3 border border-gray-200 w-1/3">モデル</th><td class="p-3 border border-gray-200">NEC VersaPro タイプVX/VD等</td></tr>
+                                <tr><th class="p-3 border border-gray-200">CPU</th><td class="p-3 border border-gray-200 font-bold text-blue-700">Intel Core i5 (第4世代)(意外とパワーがある)</td></tr>
+                                <tr class="bg-gray-100"><th class="p-3 border border-gray-200">メモリ</th><td class="p-3 border border-gray-200 text-red-600 font-bold">4GB (ここが弱点)</td></tr>
+                                <tr><th class="p-3 border border-gray-200">ストレージ</th><td class="p-3 border border-gray-200 font-bold">SSD 128GB (新品換装)</td></tr>
+                                <tr class="bg-gray-100"><th class="p-3 border border-gray-200">画面</th><td class="p-3 border border-gray-200">15.6インチ (1366x768) (画質は期待しない)</td></tr>
+                                <tr><th class="p-3 border border-gray-200">ソフト</th><td class="p-3 border border-gray-200 font-bold text-orange-600">Office 2019 H&B (永続版)</td></tr>
+                                <tr class="bg-gray-100"><th class="p-3 border border-gray-200">重量</th><td class="p-3 border border-gray-200">約 2.4kg (持ち運び不向き)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2 id="shop">2. 店舗評価：Harukisuは信頼できるか</h2>
+                    <p class="mb-4">
+                        中古PCで最も怖いのは「不良品」です。Harukisuのショップレビュー（評価4.63）を分析すると、以下の傾向が見えてきました。
+                    </p>
+                    
+                    <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                        <li><b>発送の早さ：</b>「注文翌日に届いた」という声が多数。</li>
+                        <li><b>梱包：</b>「専用の箱に入っていて綺麗だった」と好評。</li>
+                        <li><b>外装の状態：</b>「天板に擦り傷はあるが、キーボードは綺麗」という報告が多いです。</li>
+                    </ul>
+                    
+                    <figure class="my-8">
+                        <img src="harukisu-rating.png" alt="Harukisu ショップ評価" class="w-full max-w-lg mx-auto rounded-lg shadow border">
+                        <figcaption class="text-center text-xs text-gray-500 mt-2">▲ 実際のショップ評価（2026年1月時点のキャプチャ）</figcaption>
+                    </figure>
+
+                    <h2 id="performance">3. 性能検証：第4世代Core i5の実力</h2>
+                    <p class="mb-4">
+                        「第4世代」は10年以上前のCPUですが、通常電圧版（末尾M）のCore i5は、現在の格安ノートPC（Celeron N4020など）よりも処理能力が高い場合があります。
+                    </p>
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 mb-6">
+                        <p class="font-bold text-blue-800 mb-2">💡 想定される動作環境</p>
+                        <ul class="list-disc list-inside text-sm text-blue-900">
+                            <li>⭕ Excel、Wordなどの事務作業</li>
+                            <li>⭕ YouTube視聴（1080pまで）</li>
+                            <li>❌ 3Dゲーム、重い動画編集</li>
+                            <li>🔺 Windows 11の基本動作（メモリ4GBのため少し重い可能性大）</li>
+                        </ul>
+                    </div>
+
+                    <h2 id="tuning">4. 必須知識：Taiki式軽量化術</h2>
+                    <p class="mb-4">
+                        このPCのスペックを最大限に引き出すには、設定が必要です。
+                        Officeを使うためにChromeOS Flexではなく、<b>Windowsの設定変更で軽くする方法</b>が推奨されます。
+                    </p>
+
+                    <div class="bg-slate-100 p-4 md:p-8 rounded-xl my-8">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-youtube text-red-600 text-3xl mr-3"></i>
+                            <span class="font-bold text-lg">参考：Taiki氏の軽量化解説</span>
+                        </div>
+                        <div class="aspect-video rounded-lg overflow-hidden shadow-xl mb-4">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/xITH8NNpznI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-sm text-gray-600">
+                            出典：YouTubeチャンネル「Taiki / PCの先生」<br>
+                            ※この動画の設定を行うことで、メモリ4GBでもOffice作業が快適になります。
+                        </p>
+                    </div>
+
+                    <h2 id="proscons">5. 総評：買うべき人・やめるべき人</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                        <div class="merit-box p-6 rounded-xl">
+                            <h3 class="text-green-700 text-xl font-bold mb-4 flex items-center border-none p-0 m-0">
+                                <i class="far fa-smile-beam mr-2"></i> 買うべき人 (Pros)
+                            </h3>
+                            <ul class="space-y-3 text-sm font-medium text-gray-700">
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i>Officeソフトを安く使いたい</li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i>自宅の机に置きっぱなしで使う</li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i>初期設定や軽量化設定を自分でできる</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="demerit-box p-6 rounded-xl">
+                            <h3 class="text-red-700 text-xl font-bold mb-4 flex items-center border-none p-0 m-0">
+                                <i class="far fa-frown mr-2"></i> やめるべき人 (Cons)
+                            </h3>
+                            <ul class="space-y-3 text-sm font-medium text-gray-700">
+                                <li class="flex items-start"><i class="fas fa-times text-red-500 mt-1 mr-2"></i>カフェに持ち運んで使いたい（重い）</li>
+                                <li class="flex items-start"><i class="fas fa-times text-red-500 mt-1 mr-2"></i>バッテリーだけで長時間使いたい</li>
+                                <li class="flex items-start"><i class="fas fa-times text-red-500 mt-1 mr-2"></i>届いてすぐ、何もしなくても爆速がいい</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-blue-900 to-slate-900 text-white p-8 rounded-2xl text-center shadow-2xl">
+                        <p class="text-lg font-bold mb-2">結論</p>
+                        <p class="text-sm md:text-base opacity-90 mb-6">
+                            「Office付きの事務用サブ機」としては最強の選択肢です。<br>
+                            在庫があるうちにチェックしておくことをおすすめします。
+                        </p>
+                        
+                        <a href="https://item.rakuten.co.jp/harukisu/nt-tb-b453-cel-4-128-10k/" target="_blank" class="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full text-lg transition transform hover:scale-105 shadow-lg w-full md:w-auto">
+                            <span>楽天市場「Harukisu」を見る</span>
+                            <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                        <p class="mt-3 text-xs text-gray-400">※アフィリエイトリンクではありません（直接ショップへ飛びます）</p>
+                    </div>
+
+                </div>
+            </article>
+            <aside class="lg:w-1/4 space-y-8">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 sticky top-24">
+                    <h3 class="text-lg font-bold mb-4 border-b pb-2">この記事について</h3>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-slate-200 rounded-full flex items-center justify-center mb-4 text-slate-500 text-3xl overflow-hidden">
+                             <i class="fas fa-search-dollar"></i>
+                        </div>
+                        <p class="font-bold text-lg text-slate-800">1万円家電ハンター</p>
+                        <p class="text-xs text-blue-600 font-bold mb-3">編集長</p>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            「安物買いの銭失い」を7回経験し、8回目に「本物」を見極める目に目覚めたけちん坊なPCオタク。安くて良いものを探すのが趣味。<br>
+                            実機は買えなくても、スペック表と口コミの行間を読む能力には自信あり。<br>
+                            「消費者を企業の陰謀にハマらせない」をモットーに運営中。
+                        </p>
+                    </div>
                 </div>
             </aside>
-        </div>
+            </div>
     </main>
 
-    <footer class="bg-white border-t border-slate-200 py-16 mt-20">
+    <footer class="bg-slate-900 text-gray-400 py-10 border-t border-slate-800 mt-12">
         <div class="container mx-auto px-4 text-center">
-            <div class="flex justify-center gap-6 mb-8 text-slate-400 text-xl">
-                <i class="fab fa-twitter hover:text-blue-400 cursor-pointer transition"></i>
-                <i class="fab fa-youtube hover:text-red-600 cursor-pointer transition"></i>
-                <i class="fas fa-envelope hover:text-slate-900 cursor-pointer transition"></i>
-            </div>
-            <p class="text-slate-400 text-[10px] tracking-[0.4em] uppercase mb-4 font-black">Hall of 10,000 Yen Electronics</p>
-            <p class="text-slate-500 text-xs font-medium">&copy; 2026 1万円家電の殿堂 - Taiki's Technical Support Respect.</p>
+            <p class="mb-4 text-sm">&copy; 2026 1万円家電の殿堂 All Rights Reserved.</p>
         </div>
     </footer>
 
