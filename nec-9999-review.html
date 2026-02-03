@@ -15,125 +15,169 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
         body { font-family: 'Noto Sans JP', sans-serif; }
 
+        /* 見出しデザイン */
         .prose h2 {
-            background: linear-gradient(to right, #eff6ff, #ffffff);
+            background: linear-gradient(to right, #f8fafc, #ffffff);
             border-left: 5px solid #2563eb;
             padding: 0.75rem 1rem;
-            margin-top: 3rem;
+            margin-top: 3.5rem;
             margin-bottom: 1.5rem;
             font-size: 1.5rem;
             font-weight: 700;
             color: #1e293b;
+            border-bottom: 1px solid #f1f5f9;
         }
         .prose h3 {
+            display: flex;
+            align-items: center;
             border-bottom: 2px solid #e2e8f0;
             padding-bottom: 0.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
             font-size: 1.25rem;
             font-weight: 700;
             color: #334155;
         }
+        .prose h3::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 24px;
+            background-color: #3b82f6;
+            margin-right: 0.75rem;
+            border-radius: 2px;
+        }
 
-        .merit-box { border: 2px solid #bbf7d0; background-color: #f0fdf4; }
-        .demerit-box { border: 2px solid #fecaca; background-color: #fef2f2; }
+        /* メリット・デメリットボックス */
+        .merit-box { 
+            border: 1px solid #86efac; 
+            background-color: #f0fdf4; 
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+        .demerit-box { 
+            border: 1px solid #fca5a5; 
+            background-color: #fef2f2; 
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        /* 蛍光ペン風マーカー */
+        .marker-yellow {
+            background: linear-gradient(transparent 60%, #fef08a 60%);
+            font-weight: bold;
+        }
     </style>
 </head>
 
-<body class="bg-gray-50 text-slate-800 antialiased">
+<body class="bg-gray-100 text-slate-800 antialiased">
 
 <header class="bg-slate-900 text-white shadow-lg sticky top-0 z-50">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
         <div class="text-xl md:text-2xl font-bold tracking-tighter">
-            <a href="index.html" class="hover:text-blue-400 transition">
-                1万円家電の<span class="text-blue-400">殿堂</span>
+            <a href="index.html" class="hover:text-blue-400 transition flex items-center gap-2">
+                <i class="fas fa-plug text-blue-400"></i>
+                <span>1万円家電の<span class="text-blue-400">殿堂</span></span>
             </a>
         </div>
         <nav class="hidden md:flex space-x-6 text-sm font-medium">
             <a href="index.html" class="hover:text-blue-400 transition">ホーム</a>
-            <a href="index.html#pc" class="hover:text-blue-400 transition">レビュー一覧</a>
+            <a href="index.html#ranking" class="hover:text-blue-400 transition">ランキング</a>
+            <a href="index.html#pc" class="hover:text-blue-400 transition">PCレビュー</a>
         </nav>
     </div>
 </header>
 
 <main class="container mx-auto px-4 py-8 max-w-5xl">
 
-    <nav class="text-xs text-gray-500 mb-4 flex items-center">
+    <nav class="text-xs text-gray-500 mb-6 flex items-center">
         <a href="index.html" class="hover:underline">ホーム</a>
         <i class="fas fa-chevron-right mx-2 text-gray-300"></i>
-        <span class="truncate">
-            NEC VersaPro（9,999円で夢を見せるやつ）検証
+        <span class="truncate font-medium text-slate-600">
+            NEC VersaPro（9,999円ガチャ）徹底検証
         </span>
     </nav>
 
     <div class="flex flex-col lg:flex-row gap-8">
 
-        <article class="lg:w-3/4 bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden prose max-w-none">
+        <article class="lg:w-3/4 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden prose prose-slate max-w-none">
 
-            <div class="bg-slate-800 text-white p-6 md:p-10 text-center relative overflow-hidden">
-                <span class="relative z-10 bg-blue-600 text-xs font-bold px-3 py-1 rounded-full mb-4 inline-block tracking-wide">
-                    検証・分析（現実を見る会）
+            <div class="bg-white p-6 md:p-10 text-center border-b border-gray-100">
+                <span class="bg-blue-50 text-blue-700 border border-blue-100 text-xs font-bold px-3 py-1 rounded-full mb-5 inline-block tracking-wide">
+                    <i class="fas fa-microscope mr-1"></i> 実機データ検証
                 </span>
-                <h1 class="relative z-10 text-2xl md:text-3xl font-bold leading-tight mb-4">
-                    9,999円のOffice付きPCは本当に得か？<br>
-                    楽天市場「Harukisu」のVersaProを冷静に解剖する
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight mb-6 text-slate-900">
+                    9,999円のOffice付きPCは<br class="hidden md:block">
+                    <span class="marker-yellow">本当に「使える」のか？</span><br>
+                    <span class="text-lg md:text-2xl font-normal text-slate-500 mt-2 block">楽天市場「Harukisu」の激安VersaProを解剖する</span>
                 </h1>
-                <div class="relative z-10 flex justify-center items-center text-xs md:text-sm text-gray-400 space-x-4">
-                    <span><i class="far fa-clock mr-1"></i>2026.01.28 更新</span>
-                    <span><i class="fas fa-search mr-1"></i>調査：現実を壊す1万円家電ハンター</span>
+                <div class="flex flex-wrap justify-center items-center text-xs md:text-sm text-gray-500 gap-4 md:gap-6">
+                    <span class="flex items-center"><i class="far fa-clock mr-2 text-blue-500"></i>2026.01.28 更新</span>
+                    <span class="flex items-center"><i class="fas fa-user-check mr-2 text-green-500"></i>調査：1万円家電ハンター</span>
+                    <span class="flex items-center"><i class="fas fa-fire mr-2 text-red-500"></i>反響：大</span>
                 </div>
             </div>
 
             <div class="p-6 md:p-10 leading-relaxed text-gray-700">
 
-                <p class="mb-6 font-bold text-lg text-slate-800">
-                    「1万円以下で、ちゃんと動くWindows PCが欲しい」
+                <p class="mb-6 font-bold text-xl text-slate-800">
+                    「1万円でお釣りが来て、WordもExcelも使えて、動画も見たい。」
                 </p>
 
-                <p class="mb-6 text-gray-700">
-                    その願い、気持ちは分かります。財布が軽いと、判断力も軽くなるものです。
+                <p class="mb-6">
+                    その願い、痛いほど分かります。今の日本で新品PCを買おうと思えば、最低でも5〜6万円は覚悟が必要です。そこに現れた救世主（？）が、楽天市場のランキング常連<b>「Harukisu（ハルキス）」</b>が販売するNEC VersaProの中古PCです。
                 </p>
 
-<figure class="my-8 text-center group">
-                    <a href="https://item.rakuten.co.jp/harukisu/nt-tb-b453-cel-4-128-10k/?variantId=nt-nec-i5-4th-4-128" 
+                <div class="my-8 p-4 bg-gray-50 border-l-4 border-gray-400 rounded-r text-sm">
+                    <strong>💡 先に結論だけ知りたい人へ</strong><br>
+                    このPCは「パソコンに詳しい人が、遊びやおもちゃとして買う」なら最高です。<br>
+                    しかし、<b>「パソコンに詳しくない初心者が、メイン機として買う」なら地獄を見ます。</b>その理由を解説します。
+                </div>
+
+                <figure class="my-10 text-center group">
+                    <a href="https://item.rakuten.co.jp/harukisu/nt-tb-b453-cel-4-128-10k/" 
                        target="_blank" 
                        rel="noopener noreferrer" 
-                       class="block relative overflow-hidden rounded-lg shadow-lg border border-gray-200 transition-transform duration-300 hover:scale-[1.02] active:scale-95">
-                        <img src="0-nec9999-image.png"
-                             alt="NEC VersaPro 9,999円セット 商品詳細はこちら"
-                             class="w-full max-w-sm mx-auto transition-opacity duration-300 group-hover:opacity-90">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/10">
-                            <span class="bg-white/90 text-slate-800 text-xs font-bold px-4 py-2 rounded-full shadow-md border border-gray-200">
-                                <i class="fas fa-shopping-cart mr-1 text-orange-500"></i> 楽天市場で詳細を見る
+                       class="block relative overflow-hidden rounded-xl shadow-md border border-gray-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 flex items-center justify-center p-4">
+                            <img src="0-nec9999-image.png"
+                                 alt="NEC VersaPro 9,999円セット"
+                                 class="object-contain max-h-64 w-auto mx-auto mix-blend-multiply">
+                        </div>
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-4 flex justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded shadow-sm">
+                                楽天で価格を確認する <i class="fas fa-external-link-alt ml-1"></i>
                             </span>
                         </div>
                     </a>
-                    <figcaption class="text-xs text-gray-500 mt-3">
-                        出典：<a href="https://item.rakuten.co.jp/harukisu/nt-tb-b453-cel-4-128-10k/?variantId=nt-nec-i5-4th-4-128" target="_blank" class="text-blue-500 hover:underline">楽天市場 Harukisu 商品ページ</a>（希望が一番膨らむ場所）
+                    <figcaption class="text-xs text-gray-500 mt-2">
+                        ※画像はイメージです。実際は「店長おまかせ」のため、傷の多さは運次第です。
                     </figcaption>
                 </figure>
 
-                <p class="mb-6">
-                    楽天市場のランキングに居座り続ける<b>「Harukisu（ハルキス）」</b>のNEC VersaPro。<br>
-                    価格は税込み9999円から、レビュー数は700件超、評価は4.2以上. 数字だけ見れば優等生です。<br>
-                    <br
-                    ただし、数字は人を裏切りませんが、<b>人は数字を誤解します。</b>
-                    <br><br>
-                    本記事では、購入ボタンを押す前に知っておくべき<br>
-                    <b>「なぜこの価格なのか」「どこを妥協しているのか」「誰が泣くのか」</b><br>
-                    を、遠慮なく全部書きます。
-                </p>
-
-                <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-10">
-                    <p class="font-bold text-gray-800 mb-3 text-lg border-b pb-2">
-                        目次（逃げ道付き）
+                <div class="bg-blue-50/50 border border-blue-100 rounded-xl p-6 mb-12">
+                    <p class="font-bold text-slate-800 mb-3 text-lg flex items-center">
+                        <i class="fas fa-list-ul mr-2 text-blue-500"></i> 目次
                     </p>
-                    <ul class="space-y-2 text-blue-600 text-sm md:text-base font-medium list-decimal list-inside">
-                        <li><a href="#specs" class="hover:underline">詳細スペック分析：なぜ9,999円なのか</a></li>
-                        <li><a href="#shop" class="hover:underline">店舗評価：Harukisuは信用していい相手か</a></li>
-                        <li><a href="#performance" class="hover:underline">性能検証：第4世代Core i5は今でも戦えるのか</a></li>
-                        <li><a href="#tuning" class="hover:underline">必須知識：何もしないと遅い理由</a></li>
-                        <li><a href="#proscons" class="hover:underline">総評：買って笑う人／後悔する人</a></li>
+                    <ul class="space-y-2 text-slate-600 text-sm md:text-base font-medium list-none pl-1">
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 font-bold">01.</span>
+                            <a href="#specs" class="hover:text-blue-600 hover:underline decoration-blue-300 underline-offset-4 transition">スペック分析：なぜ9,999円なのか</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 font-bold">02.</span>
+                            <a href="#shop" class="hover:text-blue-600 hover:underline decoration-blue-300 underline-offset-4 transition">店舗評価：Harukisuは信用していいのか</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 font-bold">03.</span>
+                            <a href="#performance" class="hover:text-blue-600 hover:underline decoration-blue-300 underline-offset-4 transition">性能検証：第4世代Core i5の実力</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 font-bold">04.</span>
+                            <a href="#proscons" class="hover:text-blue-600 hover:underline decoration-blue-300 underline-offset-4 transition">最終結論：買って笑う人／泣く人</a>
+                        </li>
                     </ul>
                 </div>
 
