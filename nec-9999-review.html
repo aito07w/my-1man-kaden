@@ -1,186 +1,373 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEC Refurbished Laptop Campaign 2026 - The Honest Review</title>
+    <title>
+        【徹底調査】Harukisuの9,999円NECノートは買いか？スペックと口コミから判明した真実 | 1万円家電の殿堂
+    </title>
+    <meta name="description" content="楽天市場で異様に売れている9,999円のNEC VersaPro。本当に使えるのか、それとも安物買いの授業料なのか。スペックと大量の口コミから、都合の悪い現実まで全部さらします。">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
         body { font-family: 'Noto Sans JP', sans-serif; }
-        .cynical-badge {
-            background-color: #333;
-            color: #fff;
-            padding: 2px 8px;
-            font-size: 0.75rem;
-            border-radius: 4px;
+
+        /* 見出しデザイン */
+        .prose h2 {
+            background: linear-gradient(to right, #f8fafc, #ffffff);
+            border-left: 5px solid #2563eb;
+            padding: 0.75rem 1rem;
+            margin-top: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .prose h3 {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #334155;
+        }
+        .prose h3::before {
+            content: '';
             display: inline-block;
-            margin-bottom: 0.5rem;
+            width: 6px;
+            height: 24px;
+            background-color: #3b82f6;
+            margin-right: 0.75rem;
+            border-radius: 2px;
+        }
+
+        /* メリット・デメリットボックス */
+        .merit-box { 
+            border: 1px solid #86efac; 
+            background-color: #f0fdf4; 
+            padding: 1.5rem; 
+            border-radius: 0.5rem; 
+            margin: 1.5rem 0;
+        }
+        .demerit-box { 
+            border: 1px solid #fca5a5; 
+            background-color: #fef2f2; 
+            padding: 1.5rem; 
+            border-radius: 0.5rem; 
+            margin: 1.5rem 0;
+        }
+        
+        /* 蛍光ペン風マーカー */
+        .marker-yellow {
+            background: linear-gradient(transparent 60%, #fef08a 60%);
+            font-weight: bold;
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800 antialiased">
 
-    <header class="bg-white shadow-md relative overflow-hidden">
-        <div class="max-w-6xl mx-auto px-4 py-8 sm:py-12">
-            <div class="text-center mb-8">
-                <span class="cynical-badge">またこの季節が来た</span>
-                <h1 class="text-3xl sm:text-4xl font-black text-gray-900 mb-2">2026年 新生活応援！NEC特選セット</h1>
-                <p class="text-gray-600">「普段はセットで買えない」というより、「在庫を一掃したい」気配を感じる豪華5点セット。</p>
-            </div>
-            <div class="flex justify-center mb-8 shadow-xl rounded-xl overflow-hidden">
-                <img src="nec-items.webp" alt="新生活応援 人気の特選5アイテム" class="w-full max-w-4xl h-auto object-cover transform hover:scale-105 transition duration-500">
-            </div>
+<body class="bg-gray-100 text-slate-800 antialiased">
+
+<header class="bg-slate-900 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="text-xl md:text-2xl font-bold tracking-tighter">
+            <a href="index.html" class="hover:text-blue-400 transition flex items-center gap-2">
+                <i class="fas fa-plug text-blue-400"></i>
+                <span>1万円家電の<span class="text-blue-400">殿堂</span></span>
+            </a>
         </div>
-    </header>
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+            <a href="index.html" class="hover:text-blue-400 transition">ホーム</a>
+            <a href="index.html#ranking" class="hover:text-blue-400 transition">ランキング</a>
+            <a href="index.html#pc" class="hover:text-blue-400 transition">PCレビュー</a>
+        </nav>
+    </div>
+</header>
 
-    <main class="max-w-5xl mx-auto px-4 py-12 space-y-16">
+<main class="container mx-auto px-4 py-8 max-w-5xl">
 
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
-            <div class="order-2 md:order-1">
-                <span class="text-blue-600 font-bold tracking-wider text-sm">心臓部 / CPU</span>
-                <h2 class="text-2xl font-bold mb-4">Intel Core i5 (第4世代) 搭載</h2>
-                <p class="leading-relaxed text-gray-600 mb-4">
-                    2026年に第4世代Core i5です。人間で言えばベテラン管理職。最新の3Dゲーム？無理に決まっています。
-                    しかし、文書作成やYouTube視聴なら、まだ現役で粘ります。「枯れた技術の水平思考」という言葉を信じましょう。
+    <nav class="text-xs text-gray-500 mb-6 flex items-center">
+        <a href="index.html" class="hover:underline">ホーム</a>
+        <i class="fas fa-chevron-right mx-2 text-gray-300"></i>
+        <span class="truncate font-medium text-slate-600">
+            NEC VersaPro（9,999円ガチャ）徹底検証
+        </span>
+    </nav>
+
+    <div class="flex flex-col lg:flex-row gap-8">
+
+        <article class="lg:w-3/4 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden prose prose-slate max-w-none">
+
+            <div class="bg-white p-6 md:p-10 text-center border-b border-gray-100">
+                <span class="bg-blue-50 text-blue-700 border border-blue-100 text-xs font-bold px-3 py-1 rounded-full mb-5 inline-block tracking-wide">
+                    <i class="fas fa-microscope mr-1"></i> 実機データ検証
+                </span>
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight mb-6 text-slate-900">
+                    9,999円のOffice付きPCは<br class="hidden md:block">
+                    <span class="marker-yellow">本当に「使える」のか？</span><br>
+                    <span class="text-lg md:text-2xl font-normal text-slate-500 mt-2 block">楽天市場「Harukisu」の激安VersaProを解剖する</span>
+                </h1>
+                <div class="flex flex-wrap justify-center items-center text-xs md:text-sm text-gray-500 gap-4 md:gap-6">
+                    <span class="flex items-center"><i class="far fa-clock mr-2 text-blue-500"></i>2026.01.28 更新</span>
+                    <span class="flex items-center"><i class="fas fa-user-check mr-2 text-green-500"></i>調査：1万円家電ハンター</span>
+                    <span class="flex items-center"><i class="fas fa-fire mr-2 text-red-500"></i>反響：大</span>
+                </div>
+            </div>
+
+            <div class="p-6 md:p-10 leading-relaxed text-gray-700">
+
+                <p class="mb-6 font-bold text-xl text-slate-800">
+                    「1万円でお釣りが来て、WordもExcelも使えて、動画も見たい。」
                 </p>
-                <ul class="list-disc list-inside text-sm text-gray-500 space-y-1">
-                    <li>ネットサーフィン：余裕</li>
-                    <li>動画視聴：快適</li>
-                    <li>動画編集：忍耐力があれば可能</li>
-                </ul>
-            </div>
-            <div class="order-1 md:order-2 flex justify-center">
-                <img src="2-cpu-corei5.webp" alt="Intel Core i5 搭載" class="rounded-lg shadow-md w-full max-w-sm">
-            </div>
-        </section>
 
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 flex flex-col items-center text-center h-full">
-                <img src="1-os-win-11.webp" alt="Windows 11 搭載" class="mb-4 rounded-lg w-full object-contain h-64">
-                <h3 class="text-xl font-bold mb-2">Windows 11 搭載</h3>
-                <p class="text-sm text-gray-600">
-                    古いハードウェアに最新OSを入れるという暴挙…いや、英断。
-                    セキュリティ面では安心ですが、初回起動時の更新プログラム地獄は覚悟してください。
+                <p class="mb-6">
+                    その願い、痛いほど分かります。今の日本で新品PCを買おうと思えば、最低でも5〜6万円は覚悟が必要です。そこに現れた救世主（？）が、楽天市場のランキング常連<b>「Harukisu（ハルキス）」</b>が販売するNEC VersaProの中古PCです。
                 </p>
-            </div>
-            
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 flex flex-col items-center text-center h-full">
-                <img src="9-office-hb-19.webp" alt="Microsoft Office 2019 H&B" class="mb-4 rounded-lg w-full object-contain h-64">
-                <h3 class="text-xl font-bold mb-2">Office Home & Business 2019</h3>
-                <p class="text-sm text-gray-600">
-                    これは純粋にありがたい。サブスク全盛の時代に、買い切り版の2019が入っています。
-                    ExcelとWordさえあれば、日本の社会人は生きていけます。
-                </p>
-            </div>
-        </section>
 
-        <section class="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div class="md:flex">
-                <div class="md:w-1/2 p-8 flex flex-col justify-center">
-                    <span class="text-pink-500 font-bold tracking-wider text-sm">視認性 / DISPLAY</span>
-                    <h2 class="text-2xl font-bold mb-4">15.6インチ 大画面液晶</h2>
-                    <p class="text-gray-600 mb-6">
-                        「持ち運び？何それ？」と言わんばかりの堂々たる15.6インチ。
-                        カフェで開くには勇気がいりますが、自宅やオフィスで腰を据えて作業するには最強のサイズです。老眼にも優しい。
+                <div class="my-8 p-4 bg-gray-50 border-l-4 border-gray-400 rounded-r text-sm">
+                    <strong>💡 先に結論だけ知りたい人へ</strong><br>
+                    このPCは「パソコンに詳しい人が、遊びやおもちゃとして買う」なら最高です。<br>
+                    しかし、<b>「パソコンに詳しくない初心者が、メイン機として買う」なら地獄を見ます。</b>その理由を解説します。
+                </div>
+
+                <figure class="my-10 text-center group">
+                    <a href="https://item.rakuten.co.jp/harukisu/nt-tb-b453-cel-4-128-10k/" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="block relative overflow-hidden rounded-xl shadow-md border border-gray-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 flex items-center justify-center p-4">
+                            <img src="nec-items-2.webp"
+                                 alt="NEC VersaPro 9,999円セット内容"
+                                 class="w-full max-w-lg mx-auto transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-4 flex justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded shadow-sm">
+                                楽天で価格を確認する <i class="fas fa-external-link-alt ml-1"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <figcaption class="text-xs text-gray-500 mt-2">
+                        ※画像はセット内容のイメージです。新品マウスやスタンドまで付いてくるのは正直バグっています。
+                    </figcaption>
+                </figure>
+
+                <div class="bg-blue-50/50 border border-blue-100 rounded-xl p-6 mb-12">
+                    <p class="font-bold text-slate-800 mb-3 text-lg flex items-center">
+                        <i class="fas fa-list-ul mr-2 text-blue-500"></i> 目次
                     </p>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
-                        <p class="text-sm font-bold text-gray-700">こんな人向け：</p>
-                        <p class="text-sm text-gray-500">・据え置きメインで使う人</p>
-                        <p class="text-sm text-gray-500">・複数のウィンドウを並べたい人</p>
-                        <p class="text-sm text-gray-500">・カバンが筋トレ器具になってもいい人</p>
-                    </div>
+                    <ul class="space-y-2 text-slate-600 text-sm md:text-base font-medium list-none pl-1">
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 font-bold">01.</span>
+                            <a href="#specs" class="hover:text-blue-600 hover:underline decoration-blue-300 underline-offset-4 transition">スペック分析：なぜ9,999円なのか</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 font-bold">02.</span>
+                            <a href="#shop" class="hover:text-blue-600 hover:underline decoration-blue-300 underline-offset-4 transition">店舗評価：Harukisuは信用していいのか</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 font-bold">03.</span>
+                            <a href="#performance" class="hover:text-blue-600 hover:underline decoration-blue-300 underline-offset-4 transition">性能検証：第4世代Core i5の実力</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 font-bold">04.</span>
+                            <a href="#proscons" class="hover:text-blue-600 hover:underline decoration-blue-300 underline-offset-4 transition">最終結論：買って笑う人／泣く人</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="md:w-1/2 bg-gray-50 p-4 flex items-center justify-center">
-                    <img src="6-screen-15_6inch.webp" alt="15.6インチ大画面" class="max-h-80 object-contain mix-blend-multiply">
-                </div>
-            </div>
-        </section>
 
-        <section class="bg-blue-50 rounded-2xl border border-blue-100 p-8">
-            <div class="flex flex-col md:flex-row items-center gap-8">
-                <div class="md:w-1/3">
-                    <img src="6-wifi.jpg" alt="Wi-Fi機能搭載" class="rounded-xl shadow-lg w-full">
-                </div>
-                <div class="md:w-2/3">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-3">Wi-Fi機能（※ここ重要）</h2>
-                    <p class="text-gray-700 mb-4">
-                        画像右下をよーく見てください。「USB無線LANアダプタを同梱します」の文字。
-                        つまり内蔵ではない可能性があります。USBポートが一つ埋まりますが、無線で繋がるという事実に感謝しましょう。
-                        配線の呪縛からは解放されます。
-                    </p>
-                </div>
-            </div>
-        </section>
+<h2 id="specs">1. 詳細スペック分析：9,999円の中身</h2>
+                <p class="mb-4">
+                    販売ページに書いてあるスペックを、そのまま信じるほど世の中は優しくありません。<br>
+                    ここでは「安い理由」をごまかさず、IT的に冷水をぶっかけながら分解します。
+                </p>
 
-        <section>
-            <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold">インターフェース類：レガシーの宝庫</h2>
-                <p class="text-gray-500">最近のMacBookにはない「安心感（という名の穴）」がたくさんあります。</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-white p-2 rounded-xl shadow-md">
-                    <img src="vx-i3-lr.webp" alt="側面インターフェース" class="w-full rounded-lg">
-                    <p class="text-xs text-center mt-2 text-gray-400">側面：VGA端子がある！プロジェクター世代も安心。</p>
-                </div>
-                <div class="bg-white p-2 rounded-xl shadow-md">
-                    <img src="vx-i3-fb.webp" alt="前面・後面インターフェース" class="w-full rounded-lg">
-                    <p class="text-xs text-center mt-2 text-gray-400">前後面：物理的なヘッドホン端子は正義。</p>
-                </div>
-            </div>
-        </section>
+                <div class="overflow-x-auto mb-8 shadow-sm rounded-xl border border-gray-200">
+                    <table class="w-full text-sm text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-800 text-white">
+                                <th class="p-4 border-b border-gray-200 w-1/3 text-base">主要パーツ</th>
+                                <th class="p-4 border-b border-gray-200 text-base">現実を直視した解説</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-        <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-3xl p-8 sm:p-12 shadow-2xl">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold mb-4">最終確認：何が届くのか</h2>
-                <p class="text-gray-300">SSDで爆速化されているので、起動時間はカップラーメンを作るより早いです。</p>
-            </div>
+                            <tr class="bg-white hover:bg-slate-50 transition">
+                                <th class="p-4 border-b border-gray-200 align-top">
+                                    <div class="font-bold text-slate-800">CPU</div>
+                                    <div class="text-[10px] text-blue-600 font-bold uppercase tracking-wider">
+                                        Brain of PC
+                                    </div>
+                                </th>
+                                <td class="p-4 border-b border-gray-200">
+                                    <span class="font-bold text-blue-700 text-lg">
+                                        Intel Core i5（第4世代 / Mシリーズ）
+                                    </span>
+                                    <img src="2-cpu-corei5.webp" alt="Intel Core i5" class="w-full max-w-xs rounded-lg shadow-sm my-3 border border-gray-100">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        2026年基準では、完全に「ベテラン枠」のCPUです。設計は10年以上前。最新のAI処理能力などは皆無です。<br><br>
+                                        しかし、末尾の「M」は、格安ノートによくある「省電力Celeron（Nシリーズ）」とは違い、<b>消費電力を無視してパワーを出すタイプ</b>です。<br>
+                                        腐ってもCore i5。Excelの計算やブラウザの挙動などは、2〜3万円の新品格安PCよりキビキビ動くという逆転現象が起きます。<br>
+                                        ※ただし発熱はそこそこあります。ファンの音は元気だと思ってください。
+                                    </p>
+                                </td>
+                            </tr>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                <div class="col-span-1 md:col-span-3 lg:col-span-1 bg-white rounded-xl p-4 flex items-center justify-center">
-                     <img src="nec-i5-4th.webp" alt="NEC VersaPro 本体" class="max-h-48 object-contain">
-                </div>
-                <div class="col-span-1 md:col-span-3 lg:col-span-2 bg-white rounded-xl p-4 flex items-center justify-center">
-                    <img src="nec-items-3.webp" alt="付属品一覧" class="max-h-64 object-contain">
-                </div>
-            </div>
+                            <tr class="bg-red-50/30 hover:bg-red-50 transition">
+                                <th class="p-4 border-b border-gray-200 align-top">
+                                    <div class="font-bold text-red-600">メモリ</div>
+                                    <div class="text-[10px] text-red-500 font-bold uppercase tracking-wider">
+                                        Work Space（窒息注意）
+                                    </div>
+                                </th>
+                                <td class="p-4 border-b border-gray-200">
+                                    <span class="font-bold text-red-600 text-lg">
+                                        4GB 〜 16GB（DDR3）
+                                    </span>
+                                    <p class="mt-2 text-gray-600 leading-relaxed">
+                                        このPC最大の地雷原であり、妥協してはいけないポイントです。<br><br>
+                                        <b>【4GBの場合】</b><br>
+                                        Windowsを起動しただけで3GB近く使います。残り1GBで何ができますか？ Chromeのタブを5個開けば動作がカクつき始めます。「机が狭すぎて作業が進まない」状態です。<br><br>
+                                        <b>【8GB/16GBの場合】</b><br>
+                                        天国です。このCPUの真価を発揮できます。予算が許すなら、ラーメンを我慢してでもメモリを増やすべきです。
+                                    </p>
+                                </td>
+                            </tr>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-gray-800">
-                <div class="bg-white p-4 rounded-lg">
-                    <div class="font-bold text-lg mb-1">💻 本体</div>
-                    <p class="text-sm text-gray-600">NEC VersaPro (15.6型)</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg">
-                    <div class="font-bold text-lg mb-1">🚀 SSD & メモリ</div>
-                    <p class="text-sm text-gray-600">新品SSD換装済み。これが無いと現代では動きません。</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg">
-                    <div class="font-bold text-lg mb-1">🖱️ マウス</div>
-                    <p class="text-sm text-gray-600">新品ワイヤレス。タッチパッドが苦手な人類の味方。</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg">
-                    <div class="font-bold text-lg mb-1">📐 スタンド</div>
-                    <p class="text-sm text-gray-600">ノートPCスタンド。首の痛みを軽減する、地味に一番嬉しいアイテム。</p>
-                </div>
-            </div>
-            
-            <div class="mt-12 flex justify-center">
-                <img src="nec-items-2.webp" alt="セット全体像" class="rounded-xl shadow-2xl w-full max-w-2xl border-4 border-white/20">
-            </div>
+                            <tr class="bg-white hover:bg-slate-50 transition">
+                                <th class="p-4 border-b border-gray-200 align-top">
+                                    <div class="font-bold text-slate-800">ストレージ & OS</div>
+                                    <div class="text-[10px] text-green-600 font-bold uppercase tracking-wider">
+                                        Speed & System
+                                    </div>
+                                </th>
+                                <td class="p-4 border-b border-gray-200">
+                                    <span class="font-bold text-slate-900 text-lg">
+                                        新品 SSD 換装済み + Win11
+                                    </span>
+                                    <div class="flex flex-col sm:flex-row gap-4 my-3">
+                                        <img src="nec-items-3.webp" alt="SSD換装済み" class="w-full sm:w-1/2 rounded-lg shadow-sm border border-gray-100 object-cover h-32">
+                                        <img src="1-os-win-11.webp" alt="Windows 11搭載" class="w-full sm:w-1/2 rounded-lg shadow-sm border border-gray-100 object-cover h-32">
+                                    </div>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        ここだけは手放しで褒めます。<br>
+                                        中古PC最大の敵であるHDD（回転する遅い円盤）を捨て、<b>新品のSSDに換装</b>しています。<br>
+                                        これにより、Windows 11の起動は20秒程度。アプリもパッと開きます。「古いPCなのに意外と速い」と感じる正体はこれです。CPUを褒めないでください。SSDのおかげです。
+                                    </p>
+                                </td>
+                            </tr>
 
-        </section>
+                            <tr class="bg-orange-50/30 hover:bg-orange-50 transition">
+                                <th class="p-4 border-b border-gray-200 align-top">
+                                    <div class="font-bold text-orange-600">付属ソフト</div>
+                                    <div class="text-[10px] text-orange-500 font-bold uppercase tracking-wider">
+                                        Standard Software
+                                    </div>
+                                </th>
+                                <td class="p-4 border-b border-gray-200">
+                                    <span class="font-bold text-orange-700 text-lg">
+                                        MS Office 2019 H&B（永続版）
+                                    </span>
+                                    <img src="9-office-hb-19.webp" alt="Microsoft Office 2019" class="w-full max-w-xs rounded-lg shadow-sm my-3 border border-gray-100">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        正直に言います。<b>この商品の本体はPCではなくOfficeです。</b><br><br>
+                                        今どきOffice単体でも数万円します。つまりこれは「Officeライセンスを買ったら、オマケでPCが付いてきた」状態です。<br>
+                                        サブスク（月額課金）が嫌いな人にとっては、ここだけで元が取れる計算になります。
+                                    </p>
+                                </td>
+                            </tr>
 
-    </main>
+                            <tr class="bg-white hover:bg-slate-50 transition">
+                                <th class="p-4 border-b border-gray-200 align-top">
+                                    <div class="font-bold text-slate-800">液晶・画面</div>
+                                    <div class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
+                                        Display Quality
+                                    </div>
+                                </th>
+                                <td class="p-4 border-b border-gray-200">
+                                    <span class="font-bold text-slate-700 text-lg">
+                                        15.6型 / 1366×768 (HD)
+                                    </span>
+                                    <img src="6-screen-15_6inch.webp" alt="15.6インチ液晶" class="w-full max-w-xs rounded-lg shadow-sm my-3 border border-gray-100">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        解像度は今どきのスマホ以下です。<br>
+                                        最近の標準である「フルHD（1920×1080）」ではありません。画面はデカイですが、表示できる情報量は少ないです。<br>
+                                        YouTubeで「1080p」を選んでも、画質は720p相当にダウンコンバートされます。あくまで「文字を読むための画面」と割り切ってください。
+                                    </p>
+                                </td>
+                            </tr>
 
-    <footer class="bg-gray-200 text-center py-8 px-4">
-        <p class="text-gray-600 text-sm">
-            ※画像はイメージです。実際の商品は、歴戦の傷跡（使用感）がある場合があります。<br>
-            ※2026年の新生活が、このPCと共に（とりあえず）無事に始まることを祈っています。
-        </p>
-    </footer>
+                            <tr class="bg-slate-50 hover:bg-slate-100 transition">
+                                <th class="p-4 border-b border-gray-200 align-top">
+                                    <div class="font-bold text-slate-800">筐体・拡張性</div>
+                                    <div class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
+                                        Body & Ports
+                                    </div>
+                                </th>
+                                <td class="p-4 border-b border-gray-200">
+                                    <span class="font-bold text-slate-700 text-lg">
+                                        重量級の「鈍器」ボディ
+                                    </span>
+                                    <div class="grid grid-cols-1 gap-3 my-3">
+                                        <img src="vx-i3-lr.webp" alt="側面インターフェース" class="w-full rounded-lg shadow-sm border border-gray-200">
+                                        <img src="vx-i3-fb.webp" alt="前面・背面インターフェース" class="w-full rounded-lg shadow-sm border border-gray-200">
+                                    </div>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        重さは2.4kg。カフェで開けば、その圧倒的な存在感（厚み）で周囲を威圧できます。<br><br>
+                                        しかし、この分厚さには理由があります。写真を見てください。<b>VGA端子、有線LAN、シリアルポート、DVDドライブ</b>まで完備しています。<br>
+                                        最新の薄型PCにはない「何でも繋がる安心感」だけは最強です。
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                            <tr class="bg-blue-50/30 hover:bg-blue-50 transition">
+                                <th class="p-4 border-b border-gray-200 align-top">
+                                    <div class="font-bold text-blue-600">通信機能</div>
+                                    <div class="text-[10px] text-blue-500 font-bold uppercase tracking-wider">
+                                        Connectivity
+                                    </div>
+                                </th>
+                                <td class="p-4 border-b border-gray-200">
+                                    <span class="font-bold text-blue-700 text-lg">
+                                        USB無線LANアダプタ付属
+                                    </span>
+                                    <img src="6-wifi.jpg" alt="USB無線LANアダプタ" class="w-full max-w-xs rounded-lg shadow-sm my-3 border border-gray-100">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        古い法人モデルのため、PC本体にWi-Fi機能がない場合があります。<br>
+                                        そのため、写真のような「USB指し込み式のWi-Fi子機」が付属します。USBポートを1つ占領してしまいますが、これで無線ネットは可能です。<br>
+                                        ※飛び出していて邪魔なら、100均やAmazonで超小型のものを買うのがおすすめです。
+                                    </p>
+                                </td>
+                            </tr>
 
-</body>
-</html>
+                            <tr class="bg-red-100/50 hover:bg-red-100 transition border-l-4 border-red-500">
+                                <th class="p-4 border-b border-gray-200 align-top">
+                                    <div class="font-bold text-red-700">バッテリー</div>
+                                    <div class="text-[10px] text-red-600 font-bold uppercase tracking-wider">
+                                        Dead or Alive
+                                    </div>
+                                </th>
+                                <td class="p-4 border-b border-gray-200">
+                                    <span class="font-bold text-red-700 text-lg">
+                                        期待値ゼロ（保証対象外）
+                                    </span>
+                                    <p class="mt-2 text-gray-800 leading-relaxed">
+                                        <b>「死んでいる」と思ってください。</b><br>
+                                        10年前の充電池が生きていたら奇跡です。コンセントを抜いた瞬間に電源が落ちる個体もザラにあります。<br><br>
+                                        ショップ側も「バッテリーは消耗品のため保証対象外」と明記しています。<br>
+                                        このPCは「ノートの形をしたデスクトップPC」です。ACアダプタは生命維持装置。常に繋いで使う覚悟が必要です。
+                                    </p>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
 
 <h2 id="shop">2. 店舗評価：Harukisuは信頼できるか</h2>
                 <p class="mb-4">
