@@ -197,207 +197,288 @@
 </head>
 <body class="bg-slate-100 text-slate-800 antialiased">
 
-<section id="specs" class="max-w-5xl mx-auto px-4 py-12 md:py-20">
-    <div class="text-center mb-16">
-        <span class="inline-block px-4 py-1 rounded-full bg-slate-900 text-white text-xs font-bold mb-4">SPECIFICATION ANALYSIS</span>
-        <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tighter">
-            1. 詳細スペック分析：<br class="md:hidden">9,999円の正体
-        </h2>
-        <p class="max-w-2xl mx-auto text-sm md:text-base text-slate-600 leading-relaxed italic">
-            「お買い得」という甘い言葉の裏側に隠された、技術的な妥協と、中古再生業者たちの血の滲むような（あるいは適当な）努力を、専門用語を交えて徹底的に暴きます。
-        </p>
-    </div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEC Refurbished Laptop - Ultra Detailed Specs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .gradient-text {
+            background: linear-gradient(90deg, #1e293b, #334155);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* モバイルでの読みやすさを追求した縦長の余白設定 */
+        .section-spacing { padding-top: 5rem; padding-bottom: 5rem; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
 
-    <div class="space-y-12">
-        
-        <div class="bg-white rounded-[2rem] shadow-2xl border border-slate-200 overflow-hidden">
-            <div class="bg-slate-900 px-8 py-5 flex justify-between items-center">
-                <h3 class="text-white font-black text-xl">CPU：演算装置（という名の古老）</h3>
-                <span class="text-slate-400 font-mono text-xs">Unit: Intel Haswell</span>
-            </div>
-            <div class="p-6 md:p-10 lg:flex gap-10 items-start">
-                <div class="lg:w-1/3 mb-6 lg:mb-0">
-                    <img src="2-cpu-corei5.webp" alt="Intel Core i5" class="w-full h-auto rounded-2xl shadow-inner border border-slate-100 object-contain">
-                </div>
-                <div class="lg:w-2/3">
-                    <div class="mb-4">
-                        <span class="text-2xl md:text-3xl font-black text-blue-600">Intel Core i5-4000M Series</span>
-                        <div class="flex gap-2 mt-2">
-                            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold rounded">2 Cores / 4 Threads</span>
-                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded">TDP 37W</span>
-                        </div>
-                    </div>
-                    <p class="text-slate-600 leading-relaxed mb-6">
-                        2013年〜2014年頃に一世を風靡した第4世代「Haswell」アーキテクチャ。注目すべきは、薄型PC用の「U」ではなく、処理能力重視の「M」を搭載している点です。
-                        電圧を贅沢に使い、当時のビジネスマンのストレスを軽減していましたが、2026年の重厚長大なWebサイト群を相手にするには、流石に息切れが見られます。
-                    </p>
-                    <blockquote class="border-l-4 border-amber-400 bg-amber-50 p-4 text-sm text-amber-900 rounded-r-xl">
-                        <strong>AIの分析：</strong> シングルタスクならまだ戦えますが、Zoomを開きながらブラウザでタブを10枚開いた瞬間、ファンが離陸準備を始めます。
-                    </blockquote>
-                </div>
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 bg-white border-b border-slate-200">
+        <div class="max-w-3xl w-full text-center">
+            <span class="inline-block px-3 py-1 bg-red-100 text-red-600 text-xs font-bold rounded-full mb-6">RE-DETAILED REPORT 2026</span>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-tight">
+                9,999円の深淵を覗く。<br>
+                <span class="gradient-text">超詳細スペック分析</span>
+            </h1>
+            <p class="text-slate-500 text-sm md:text-base leading-relaxed mb-12">
+                これは単なる「安いパソコン」の紹介ではありません。2026年という過酷なインターネット環境において、この「老兵」がどう生き残るのか、その解剖記録です。
+                スクロールの手を止めないでください。真実は細部に宿ります。
+            </p>
+            <div class="animate-bounce">
+                <svg class="w-6 h-6 mx-auto text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
             </div>
         </div>
+    </section>
 
-        <div class="bg-white rounded-[2rem] shadow-2xl border border-red-100 overflow-hidden">
-            <div class="bg-red-700 px-8 py-5 flex justify-between items-center text-sm">
-                <h3 class="text-white font-black text-xl">メモリ：主記憶（窒息へのカウントダウン）</h3>
-                <span class="text-red-200 font-mono text-xs uppercase">DDR3L-1600MHz</span>
+    <section class="section-spacing px-6 max-w-3xl mx-auto border-b border-slate-100">
+        <div class="mb-10">
+            <span class="text-blue-600 font-mono text-sm font-bold">01. PROCESSOR</span>
+            <h2 class="text-3xl font-black mt-2 mb-6">CPU：演算装置の「遺産」</h2>
+            <div class="rounded-3xl overflow-hidden shadow-2xl mb-8">
+                <img src="2-cpu-corei5.webp" alt="Intel Core i5" class="w-full">
             </div>
-            <div class="p-6 md:p-10">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                    <div class="p-4 rounded-2xl border-2 border-red-500 bg-red-50 relative overflow-hidden">
-                        <span class="text-red-600 font-black text-2xl">4GB</span>
-                        <p class="text-xs text-red-700 mt-1 font-bold italic">修羅の道。OSを動かすのが精一杯です。</p>
-                    </div>
-                    <div class="p-4 rounded-2xl border-2 border-slate-200 bg-slate-50 opacity-60">
-                        <span class="text-slate-900 font-black text-2xl">8GB</span>
-                        <p class="text-xs text-slate-600 mt-1">現代の最低ライン。人権の獲得。</p>
-                    </div>
-                    <div class="p-4 rounded-2xl border-2 border-slate-200 bg-slate-50 opacity-60">
-                        <span class="text-slate-900 font-black text-2xl">16GB</span>
-                        <p class="text-xs text-slate-600 mt-1 text-sm">ブルジョワジー。このCPUには勿体ない。</p>
-                    </div>
+            <h3 class="text-xl font-bold mb-4">Intel Core i5-4000M Series (Haswell)</h3>
+            <div class="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base text-justify">
+                <p>
+                    搭載されているのは、2013年に発表された第4世代Intel Coreプロセッサ、コードネーム「Haswell」です。22nmプロセスルールで製造されたこのチップは、かつては世界のビジネスの最前線を支えていました。
+                </p>
+                <p>
+                    特筆すべきは、末尾が「U（超低電圧版）」ではなく「M（通常電圧版）」である点。現代の薄型PC用CPUよりも消費電力（TDP 37W）は高いですが、その分、古いなりに「粘り」のある処理を見せます。
+                </p>
+                <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                    <ul class="space-y-3 font-medium text-blue-900 text-xs md:text-sm">
+                        <li class="flex justify-between"><span>コア/スレッド数:</span> <span>2コア / 4スレッド</span></li>
+                        <li class="flex justify-between"><span>ベース周波数:</span> <span>2.5GHz 〜 2.7GHz</span></li>
+                        <li class="flex justify-between"><span>L3キャッシュ:</span> <span>3MB Intel Smart Cache</span></li>
+                    </ul>
                 </div>
-                <p class="text-slate-600 text-sm md:text-base leading-relaxed">
-                    規格はDDR3L。最新のDDR5と比べると、もはや「伝書鳩と光回線」ほどの速度差があります。
-                    特にWindows 11環境において、4GBは「常に仮想メモリ（SSD）に頼り切る」という、ストレージを過労死させる設定です。長生きさせたいなら、最低でも8GBへの増設を強く、それこそ強迫観念的に推奨します。
+                <p class="italic text-xs text-slate-400">
+                    ※皮肉な現実：最新のスマホに処理能力で負けることもありますが、彼には「物理的な排熱ファン」というプライドがあります。
                 </p>
             </div>
         </div>
+    </section>
 
-        <div class="bg-white rounded-[2rem] shadow-2xl border border-emerald-100 overflow-hidden text-sm md:text-base">
-            <div class="bg-emerald-700 px-8 py-5 flex justify-between items-center text-sm">
-                <h3 class="text-white font-black text-xl text-sm">ストレージ：補助記憶（唯一の希望）</h3>
-                <span class="text-emerald-200 font-mono text-xs uppercase">SATA 3.0 / 6Gbps</span>
-            </div>
-            <div class="p-6 md:p-10 lg:flex flex-row-reverse gap-10 items-start">
-                <div class="lg:w-1/3 mb-6 lg:mb-0">
-                    <img src="nec-items-3.webp" alt="2.5inch SSD" class="w-full h-auto rounded-2xl shadow-md border border-slate-100">
-                </div>
-                <div class="lg:w-2/3">
-                    <h4 class="text-2xl font-black text-emerald-800 mb-4">新品 2.5インチ SATA SSD 搭載</h4>
-                    <p class="text-slate-600 mb-6">
-                        HDDという名の「回転する円盤」は排除されました。<strong>2.5インチ・7mm厚のSATA規格SSD</strong>が、この老兵の心臓に無理やり電気ショックを与えています。
-                    </p>
-                    <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
-                        <p class="font-bold text-emerald-900 mb-3">【容量選択オプション】</p>
-                        <ul class="grid grid-cols-2 gap-3 text-sm">
-                            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-emerald-500 rounded-full"></span> <strong>128GB:</strong> クラウド前提の最小構成</li>
-                            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-emerald-500 rounded-full"></span> <strong>256GB:</strong> 事務用として最も賢い選択</li>
-                            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-emerald-500 rounded-full"></span> <strong>512GB:</strong> 少し贅沢。スマホのバックアップに</li>
-                            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-emerald-500 rounded-full"></span> <strong>1TB:</strong> 宝の持ち腐れ。贅の極み</li>
-                        </ul>
+    <section class="section-spacing px-6 max-w-3xl mx-auto border-b border-slate-100">
+        <div class="mb-10 text-right">
+            <span class="text-red-600 font-mono text-sm font-bold">02. MAIN MEMORY</span>
+            <h2 class="text-3xl font-black mt-2 mb-6 text-slate-900 text-right text-sm md:text-base">メモリ：作業領域の「限界点」</h2>
+        </div>
+        <div class="space-y-8">
+            <div class="p-8 bg-slate-900 text-white rounded-[2rem] shadow-xl">
+                <p class="text-sm font-bold text-red-400 mb-2 uppercase tracking-widest">Crucial Alert</p>
+                <h3 class="text-2xl font-black mb-4">DDR3L-1600 (PC3L-12800)</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                    メモリ規格は低電圧版のDDR3L。2026年現在の主流であるDDR5と比較すると、データの転送速度は「徒歩とリニア中央新幹線」ほどの差があります。
+                </p>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                        <span class="block text-xl font-bold">4GB (標準構成)</span>
+                        <p class="text-xs text-slate-400">Windows 11を動かす上での「最低生存圏」。ブラウザのタブを5枚開けば、そこはもう戦場です。</p>
+                    </div>
+                    <div class="bg-red-500/20 p-4 rounded-xl border border-red-500/50">
+                        <span class="block text-xl font-bold text-red-400 underline decoration-2">8GB (推奨)</span>
+                        <p class="text-xs text-slate-300 text-sm md:text-base">「人権」の最低ライン。事務作業、YouTube視聴を並行して行うなら、ここからがスタート地点です。</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="bg-white rounded-[2rem] shadow-2xl border border-indigo-100 overflow-hidden text-sm md:text-base">
-            <div class="bg-indigo-700 px-8 py-5 flex justify-between items-center text-sm">
-                <h3 class="text-white font-black text-xl text-sm md:text-base">インターフェース：接続端子（絶滅危惧種の保護区）</h3>
-                <span class="text-indigo-200 font-mono text-xs uppercase">I/O Ports</span>
+    <section class="section-spacing px-6 max-w-3xl mx-auto border-b border-slate-100">
+        <div>
+            <span class="text-emerald-600 font-mono text-sm font-bold text-sm md:text-base uppercase tracking-widest">03. STORAGE UNIT</span>
+            <h2 class="text-3xl font-black mt-2 mb-6">ストレージ：延命の「特効薬」</h2>
+            <div class="rounded-3xl overflow-hidden shadow-2xl mb-8">
+                <img src="nec-items-3.webp" alt="SSD Options" class="w-full">
             </div>
-            <div class="p-6 md:p-10">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                    <img src="vx-i3-lr.webp" alt="Side Ports" class="rounded-xl border border-slate-200 shadow-sm">
-                    <img src="vx-i3-fb.webp" alt="Rear Ports" class="rounded-xl border border-slate-200 shadow-sm">
+            <div class="space-y-6 text-slate-600 text-sm md:text-base leading-relaxed">
+                <p>
+                    このPCが「使える」最大の理由は、旧来のHDDを捨て去り、**新品の2.5インチ SATA SSD**に換装していることにあります。物理的に回転するパーツを排除したことで、OSの起動時間は劇的に改善されました。
+                </p>
+                
+                <div class="grid grid-cols-1 gap-2 border-l-4 border-emerald-500 pl-6 my-8">
+                    <h4 class="font-black text-slate-900 mb-2">【選択可能な容量オプション】</h4>
+                    <div class="flex justify-between items-center py-2 border-b border-slate-100">
+                        <span class="font-mono font-bold">128GB</span>
+                        <span class="text-xs px-2 py-1 bg-slate-100 rounded">クラウド派 / 最小限</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-slate-100">
+                        <span class="font-mono font-bold">256GB</span>
+                        <span class="text-xs px-2 py-1 bg-emerald-100 text-emerald-700 rounded">一番人気 / 定番</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-slate-100">
+                        <span class="font-mono font-bold">512GB</span>
+                        <span class="text-xs px-2 py-1 bg-slate-100 rounded">写真・動画保存用</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-slate-100">
+                        <span class="font-mono font-bold">1TB (1024GB)</span>
+                        <span class="text-xs px-2 py-1 bg-amber-100 text-amber-700 rounded">ロマン / データの墓場</span>
+                    </div>
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="text-center p-3 bg-indigo-50 rounded-xl">
-                        <p class="text-[10px] text-indigo-500 font-bold uppercase">USB 3.0</p>
-                        <p class="font-bold text-slate-800">x 5ポート</p>
-                    </div>
-                    <div class="text-center p-3 bg-indigo-50 rounded-xl">
-                        <p class="text-[10px] text-indigo-500 font-bold uppercase">Video Out</p>
-                        <p class="font-bold text-slate-800 text-xs">HDMI / VGA</p>
-                    </div>
-                    <div class="text-center p-3 bg-indigo-50 rounded-xl">
-                        <p class="text-[10px] text-indigo-500 font-bold uppercase">Network</p>
-                        <p class="font-bold text-slate-800">有線LAN搭載</p>
-                    </div>
-                    <div class="text-center p-3 bg-indigo-50 rounded-xl">
-                        <p class="text-[10px] text-indigo-500 font-bold uppercase">Drive</p>
-                        <p class="font-bold text-slate-800 text-xs text-xs md:text-base">DVDマルチ/ROM</p>
-                    </div>
-                </div>
-                <p class="mt-6 text-slate-600 text-sm leading-relaxed">
-                    最新のPCが「USB-Cしかない」という不便を強いる中、このPCは歴史をすべて受け入れています。
-                    <strong>VGA（D-Sub 15ピン）</strong>があるため、昭和の公民館にある古いプロジェクターとも即座に接続可能。SDカードスロットも内蔵しており、デジカメ写真の取り込みもドングル要らず。武骨ですが、誠実な設計です。
+
+                <p class="text-xs bg-gray-100 p-4 rounded-lg">
+                    <strong>技術仕様詳細：</strong> インターフェースはSATA 3.0 (6Gbps)。NVMeのような爆速はありませんが、この時代のチップセットが受け入れられる最高速度を叩き出します。厚さは標準的な7mm、あるいはスペーサー付きの9.5mmが収まる設計です。
                 </p>
             </div>
         </div>
+    </section>
 
-        <div class="bg-slate-800 rounded-[2rem] shadow-2xl overflow-hidden text-sm md:text-base">
-            <div class="px-8 py-5 flex justify-between items-center text-sm">
-                <h3 class="text-white font-black text-xl">ボディ：筐体（質実剛健な塊）</h3>
-                <span class="text-slate-400 font-mono text-xs uppercase">Chassis: VersaPro VK Series</span>
+    <section class="section-spacing px-6 max-w-3xl mx-auto border-b border-slate-100">
+        <span class="text-indigo-600 font-mono text-sm font-bold uppercase tracking-widest text-sm md:text-base">04. CONNECTIVITY</span>
+        <h2 class="text-3xl font-black mt-2 mb-6">インターフェース：時代の「地層」</h2>
+        <div class="grid grid-cols-1 gap-4 mb-8">
+            <img src="vx-i3-lr.webp" alt="Interface Left Right" class="rounded-2xl shadow-lg">
+            <img src="vx-i3-fb.webp" alt="Interface Front Back" class="rounded-2xl shadow-lg">
+        </div>
+        <div class="space-y-6 text-slate-600 text-sm md:text-base">
+            <p>
+                「ドングル地獄」に陥っている最新のMacBookユーザーが、羨望の眼差し（あるいは同情）を向ける充実のポート類です。
+            </p>
+            <ul class="space-y-4">
+                <li class="flex gap-4">
+                    <span class="w-24 font-bold text-slate-900 shrink-0 uppercase tracking-widest text-xs md:text-sm">USB 3.0</span>
+                    <p class="text-sm">計5ポート搭載。マウス、プリンタ、USBメモリ、加湿器、扇風機を同時に繋げます。</p>
+                </li>
+                <li class="flex gap-4 border-t border-slate-100 pt-4">
+                    <span class="w-24 font-bold text-slate-900 shrink-0 uppercase tracking-widest text-xs md:text-sm">VGA & HDMI</span>
+                    <p class="text-sm">新旧両対応。15ピンのVGAがあるため、昭和から稼働しているプロジェクターにも接続可能。</p>
+                </li>
+                <li class="flex gap-4 border-t border-slate-100 pt-4">
+                    <span class="w-24 font-bold text-slate-900 shrink-0 uppercase tracking-widest text-xs md:text-sm">Optical</span>
+                    <p class="text-sm">DVDマルチドライブ搭載。懐かしのDVD鑑賞や、音楽CDの取り込みに。令和ではもはや貴重品です。</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-spacing px-6 max-w-3xl mx-auto border-b border-slate-100">
+        <span class="text-slate-500 font-mono text-sm font-bold uppercase tracking-widest">05. CHASSIS & KEYBOARD</span>
+        <h2 class="text-3xl font-black mt-2 mb-6">筐体：ビジネスの「戦車」</h2>
+        <div class="rounded-3xl overflow-hidden shadow-2xl mb-8">
+            <img src="6-screen-15_6inch.webp" alt="15.6inch Body" class="w-full">
+        </div>
+        <div class="space-y-6 text-slate-600 text-sm md:text-base leading-relaxed">
+            <p>
+                NEC VersaProの筐体は、華奢なモバイルノートとは一線を画す「重厚長大」な設計です。
+                重量は約2.4kg。持ち歩くのは大変ですが、デスクに置いた際の安定感は抜群。
+            </p>
+            <div class="bg-slate-100 p-6 rounded-2xl">
+                <h4 class="font-bold text-slate-900 mb-2">打鍵感へのこだわり</h4>
+                <p class="text-sm">
+                    キーボードは、最近流行りの浅いタイプではありません。深さ2.4mmのしっかりとしたストロークがあり、
+                    「カチャカチャ」ではなく「スコスコ」とした伝統的なメンブレンの感触を楽しめます。テンキー付きで数値入力も捗ります。
+                </p>
             </div>
-            <div class="p-6 md:p-10 lg:flex gap-10">
-                <div class="lg:w-1/2">
-                    <img src="nec-i5-4th.webp" alt="NEC Laptop Body" class="w-full h-auto rounded-2xl mb-6 lg:mb-0">
+        </div>
+    </section>
+
+    <section class="section-spacing px-6 max-w-3xl mx-auto border-b border-slate-100">
+        <div class="grid grid-cols-1 gap-12">
+            <div>
+                <span class="text-amber-600 font-mono text-sm font-bold uppercase tracking-widest text-sm md:text-base">06. POWER & NETWORK</span>
+                <h2 class="text-3xl font-black mt-2 mb-6">バッテリーと通信：現実との「妥協」</h2>
+                <div class="rounded-3xl overflow-hidden shadow-lg mb-6">
+                    <img src="6-wifi.jpg" alt="WiFi Dongle" class="w-full">
                 </div>
-                <div class="lg:w-1/2 flex flex-col justify-center">
-                    <h4 class="text-2xl font-black text-white mb-4 tracking-tight">「重い・厚い・頑丈」の三拍子</h4>
-                    <p class="text-slate-400 mb-6">
-                        素材は高級感溢れるカーボン…ではなく、硬派な**強化プラスチック**。
-                        多少乱暴に扱っても、あるいは護身用の盾として使っても壊れそうにない安心感があります。
-                        キーボードはNEC伝統の「メンブレン」方式。深めのストローク（約2.4mm）は、打鍵のたびに「俺は今、仕事をしている」という充実感を与えてくれます。
+                <div class="space-y-6 text-slate-600 text-sm md:text-base">
+                    <h4 class="font-bold text-slate-900">🔋 バッテリーについて</h4>
+                    <p>
+                        中古PC最大の弱点。正直に言います。ACアダプタを抜いての長時間作業は「博打」です。
+                        バッテリーは「停電時のバックアップ」程度に考え、常に電源を確保して使用することを強く推奨します。
                     </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="border border-slate-600 rounded-xl p-3">
-                            <p class="spec-label text-slate-500">Weight</p>
-                            <p class="text-white font-bold text-sm">約 2.4 kg 〜</p>
+                    <h4 class="font-bold text-slate-900">📶 Wi-Fi 搭載（アダプタ同梱）</h4>
+                    <p>
+                        内蔵されていない、あるいは内蔵されていても現代の規格には遅い。
+                        そのため、**USB無線LANアダプタ**を同梱します。
+                        これにより、2.4GHz/5GHzの両方で安定した通信が可能。USBポートが一つ埋まりますが、安定には代えられません。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-spacing px-6 max-w-3xl mx-auto border-b border-slate-100">
+        <span class="text-purple-600 font-mono text-sm font-bold uppercase tracking-widest text-sm md:text-base">07. OPERATING SYSTEM & SOFTWARE</span>
+        <h2 class="text-3xl font-black mt-2 mb-6">OSとOffice：魂の「最新化」</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <img src="1-os-win-11.webp" alt="Windows 11" class="rounded-xl border border-slate-100 p-4 bg-white shadow-sm">
+            <img src="9-office-hb-19.webp" alt="Office 2019" class="rounded-xl border border-slate-100 p-4 bg-white shadow-sm">
+        </div>
+        <div class="space-y-6 text-slate-600 text-sm md:text-base">
+            <h4 class="font-bold text-purple-900">Windows 11 Pro 搭載</h4>
+            <p>
+                公式にはサポート外の第4世代CPUですが、再生業者の技術によりWindows 11をクリーンインストール済み。
+                セキュリティ面での延命措置が施されています。
+            </p>
+            <h4 class="font-bold text-indigo-900">Microsoft Office 2019 H&B</h4>
+            <p>
+                Word, Excel, PowerPointが使用可能。サブスクリプション（月額課金）に怯える必要はありません。
+                これだけで本体代金の元が取れるという、計算が合わない構成です。
+            </p>
+        </div>
+    </section>
+
+    <section class="section-spacing px-6 max-w-4xl mx-auto mb-20">
+        <div class="bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-[3rem] p-10 md:p-16 shadow-2xl relative overflow-hidden">
+            <div class="relative z-10 text-sm md:text-base">
+                <span class="inline-block px-3 py-1 bg-indigo-500 text-white text-[10px] font-bold rounded-full mb-6 uppercase tracking-widest text-sm md:text-base">Special Bundle</span>
+                <h2 class="text-4xl md:text-5xl font-black mb-10 leading-tight">新生活応援特典：<br>これぞ「全部入り」</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 bg-white/10 rounded-2xl">🖱️</div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2">新品ワイヤレスマウス</h4>
+                                <p class="text-slate-400 text-sm">
+                                    煩わしいケーブルは不要。2.4GHz接続の静音仕様（のことが多い）マウスを同梱。
+                                </p>
+                            </div>
                         </div>
-                        <div class="border border-slate-600 rounded-xl p-3">
-                            <p class="spec-label text-slate-500">Screen</p>
-                            <p class="text-white font-bold text-sm">15.6型 アンチグレア</p>
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 bg-white/10 rounded-2xl">📐</div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2">PCスタンド（高さ/角度調整可）</h4>
+                                <p class="text-slate-400 text-sm">
+                                    実はこれが最強のアイテム。視線を上げることで、猫背と肩こりを劇的に解消します。アルミ製で放熱効果も期待できます。
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    <div class="flex items-center justify-center">
+                        <img src="nec-items-2.webp" alt="Bundle Visual" class="w-full max-w-sm rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                    </div>
+                </div>
+                
+                <div class="mt-16 pt-8 border-t border-white/10 text-center">
+                    <p class="text-slate-400 text-sm mb-4">全てのパーツ、全ての特典を合わせると……</p>
+                    <div class="text-5xl font-black text-indigo-400 tracking-tighter italic">TOTAL: ¥9,999</div>
+                    <p class="text-[10px] text-slate-500 mt-4 uppercase tracking-widest">End of detailed specifications report.</p>
                 </div>
             </div>
+            <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl"></div>
         </div>
+    </section>
 
-        <div class="bg-white rounded-[2rem] shadow-2xl border border-purple-100 overflow-hidden text-sm md:text-base">
-            <div class="bg-gradient-to-r from-purple-700 to-indigo-800 px-8 py-5 flex justify-between items-center text-sm">
-                <h3 class="text-white font-black text-xl">OS & OFFICE：ソフトウェア（魂の融合）</h3>
-                <span class="text-purple-200 font-mono text-xs uppercase">Pro License Installed</span>
-            </div>
-            <div class="p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="space-y-4">
-                    <img src="1-os-win-11.webp" alt="Windows 11" class="w-24 h-auto">
-                    <h4 class="text-xl font-black text-purple-900">Windows 11 Pro 64bit</h4>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        本来、第4世代CPUはWindows 11の公式要件を満たしていません。
-                        しかし、このPCには「魔法（バイパス処理）」が施されています。
-                        最新のUIとセキュリティを享受できますが、Microsoftの気まぐれなアップデートでいつ反旗を翻されるか、常にスリルを楽しめます。
-                    </p>
-                </div>
-                <div class="space-y-4">
-                    <img src="9-office-hb-19.webp" alt="Microsoft Office" class="w-24 h-auto">
-                    <h4 class="text-xl font-black text-indigo-900">Office 2019 H&B</h4>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        正規プロダクトキー付きの「買い切り版」。
-                        2026年になっても、ExcelやWordの基本的な操作感は2019年から変わっていません。
-                        これ一つで、就職活動からPTAの資料作成、怪しい投資の収支管理まで完璧にこなせます。
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="mt-16 text-center">
-        <hr class="border-slate-300 mb-8 max-w-xs mx-auto">
+    <footer class="bg-white py-12 border-t border-slate-100 text-center px-6">
         <p class="text-xs text-slate-400 leading-relaxed uppercase tracking-widest">
-            End of technical report.<br>
-            ※このPCを購入することは、歴史の一部を所有することに他なりません。
+            2026 NEC VersaPro Special Refurbished Set.<br>
+            ※このページはあなたの購買欲と、中古PCへの正しい（あるいは偏った）理解を促進するために作成されました。
         </p>
-    </div>
-</section>
+    </footer>
 
 </body>
 </html>
-
+    
 <h2 id="shop">2. 店舗評価：Harukisuは信頼できるか</h2>
                 <p class="mb-4">
                     中古PCで一番怖いのは、性能でも価格でもありません。<br>
