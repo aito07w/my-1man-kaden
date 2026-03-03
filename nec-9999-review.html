@@ -542,7 +542,7 @@
     </div>
 </section>
 
-<section class="relative pt-24 pb-24">
+<section class="relative pt-24 pb-24 border-t border-slate-100">
 
     <div class="absolute top-0 right-8
                 text-[120px] md:text-[180px]
@@ -553,19 +553,21 @@
 
     <div class="relative z-10">
         
-        <span class="text-orange-600 font-mono text-sm font-bold uppercase tracking-widest">04. ENERGY CELL</span>
+        <span class="text-blue-600 font-mono text-sm font-bold uppercase tracking-widest">
+            04. ENERGY CELL
+        </span>
         <h2 class="text-3xl font-black mt-2 mb-6">バッテリー：持ち運べない「重り」</h2>
 
         <div class="space-y-6 text-slate-600 text-sm md:text-base leading-relaxed">
             <div>
                 <h3 class="text-xl font-bold mb-4 flex items-center">
-                    <i class="fas fa-battery-quarter mr-2 text-orange-500"></i>
+                    <i class="fas fa-battery-quarter mr-2 text-blue-500"></i>
                     純正リチウムイオンバッテリー（中古・経年劣化）
                 </h3>
 
-                <div class="bg-red-50 p-4 rounded-xl mb-6">
+                <div class="bg-blue-50 p-4 rounded-xl mb-6 border border-blue-100">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="text-sm font-bold text-red-700 flex items-center">
+                        <span class="text-sm font-bold text-blue-700 flex items-center">
                             <i class="fas fa-bolt mr-2"></i>自立駆動の限界
                         </span>
                         <span class="px-3 py-1 text-xs font-bold rounded-full bg-red-100 text-red-700">
@@ -575,39 +577,51 @@
                     <div class="flex items-center gap-3">
                         <div class="w-full bg-slate-200 rounded-full h-2.5">
                             <div class="bg-red-500 h-2.5 rounded-full relative" style="width: 5%">
-                                <span class="absolute right-0 -top-1 transform translate-x-1/2 w-2 h-2 bg-red-500 rounded-full animate-ping opacity-75"></span>
+                                <span class="absolute right-0 -top-1 transform translate-x-1/2 w-2 h-2 bg-red-400 rounded-full animate-ping opacity-75"></span>
                                 <span class="absolute right-0 -top-1 transform translate-x-1/2 w-2 h-2 bg-red-600 rounded-full"></span>
                             </div>
                         </div>
-                        <span class="text-sm font-bold text-red-600 whitespace-nowrap">5% (AC必須)</span>
+                        <span class="text-sm font-bold text-red-600 whitespace-nowrap">
+                            5% (AC必須)
+                        </span>
                     </div>
-                    <p class="text-xs text-red-600 mt-2">※コンセントを抜いた瞬間、カウントダウンが始まります。</p>
+                    
+                    <p class="text-xs text-blue-600 mt-2 hover:text-red-600 transition-colors">
+                        ※コンセントを抜いた瞬間、Windowsの終了処理すら間に合わない可能性があります。
+                    </p>
                 </div>
 
                 <div class="space-y-6 text-slate-600 leading-relaxed text-justify">
-                    <div class="grid grid-cols-1 gap-2 border-l-4 border-orange-500 pl-6 my-8 bg-orange-50/30 py-4 rounded-r-xl">
+                    <div class="grid grid-cols-1 gap-2 border-l-4 border-blue-500 pl-6 my-8 bg-blue-50/30 py-4 rounded-r-xl shadow-inner">
+
                         <h4 class="font-black text-slate-900 mb-2 px-2">【電力供給の実態】</h4>
-                        <div class="flex justify-between items-center py-2 px-2 border-b border-orange-100">
-                            <span class="font-mono font-bold">公称駆動時間</span>
-                            <span class="text-sm font-semibold">測定不能（期待値ゼロ）</span>
+
+                        <div class="flex justify-between items-center py-2 px-2 border-b border-blue-100 hover:bg-white transition rounded">
+                            <span class="font-mono font-bold text-slate-700">公称駆動時間</span>
+                            <span class="text-sm font-semibold text-slate-600">測定不能（期待値ゼロ）</span>
                         </div>
-                        <div class="flex justify-between items-center py-2 px-2 border-b border-orange-100">
-                            <span class="font-mono font-bold">実効容量（推定）</span>
-                            <span class="text-sm font-semibold">10%以下（完全放電の危機）</span>
+
+                        <div class="flex justify-between items-center py-2 px-2 border-b border-blue-100 hover:bg-white transition rounded">
+                            <span class="font-mono font-bold text-slate-700">実効容量（推定）</span>
+                            <span class="text-sm font-semibold text-slate-600">10%以下（完全放電の危機）</span>
                         </div>
-                        <div class="flex justify-between items-center py-2 px-2">
-                            <span class="font-mono font-bold">新品交換オプション</span>
-                            <span class="text-sm font-semibold text-red-600">本機種は「対象外」</span>
+
+                        <div class="flex justify-between items-center py-3 px-3 border-2 border-red-500 bg-red-50 rounded-xl shadow-md my-1 transition hover:shadow-lg">
+                            <span class="font-mono font-bold text-red-900 flex items-center">
+                                <i class="mr-1.5 text-red-500 fas fa-times-circle"></i>新品交換オプション
+                            </span>
+                            <span class="text-[10px] md:text-xs px-2 py-1 bg-red-600 text-white rounded-full font-bold tracking-tighter shadow-sm">
+                                本機種は「対象外」
+                            </span>
                         </div>
                     </div>
 
-                    <p>
+                    <p class="text-sm md:text-base leading-relaxed-more">
                         中古PC市場における「バッテリー」とは、駆動装置ではなく「停電時のバックアップ用UPS」と解釈するのが大人というものです。
                         2013年製のセルが現代まで現役でいられるはずもなく、中身はスカスカの骨董品。
                         販売ページには「新品バッテリー交換可能（一部機種）」という甘い言葉が並んでいますが、
                         この9,999円という極限価格を実現するために、真っ先に切り捨てられたのがその「救済措置」です。
-                    </p>
-                    <p>
+                        <br><br>
                         つまり、この個体における「新品交換」の文字は、手の届かない蜃気楼。
                         届いた瞬間に「バッテリー駆動できない！」と騒ぐのはお門違いというものでしょう。
                         最初からACアダプターという名の「生命維持装置」に繋がれた、動かせないノートPC。
@@ -615,19 +629,22 @@
                     </p>
 
                     <div class="flex flex-col md:flex-row items-start gap-6 my-12 max-w-2xl mx-auto px-0 sm:px-6">
+
                         <div class="flex flex-col items-center flex-shrink-0 mx-auto md:mx-0">
-                            <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden shadow-lg">
+                            <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden shadow-lg border-2 border-white/20">
                                 <img src="Image_fx.png" alt="フクロウ" class="w-full h-full object-cover">
                             </div>
-                            <span class="mt-3 text-[10px] md:text-base font-semibold text-blue-400 text-center">
+                            <span class="mt-3 text-[10px] md:text-base font-semibold text-blue-400 text-center whitespace-nowrap">
                                 1万円家電ハンター
                             </span>
                         </div>
+
                         <div class="flex-grow bg-slate-800 md:bg-slate-900/80 text-slate-100 px-5 md:px-6 py-4 md:py-5 rounded-2xl border border-slate-700 leading-relaxed text-base md:text-base shadow-lg">
                             現実を見よう。これは「持ち運べるPC」ではない。
                             「取っ手がついた、場所を取らないデスクトップ」だ。
                             バッテリーが死んでいるということは、
                             余計な熱源や発火リスクが低いというポジティブな（無理のある）解釈もできる。
+                            <br><br>
                             オプションの新品交換を期待した奴は、
                             商品ページの「注釈」という名の迷宮に迷い込んだだけ。
                             このPCはコンセントに縛られる運命なんだ。
