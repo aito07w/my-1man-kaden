@@ -3,116 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>【9,999円】NEC VersaProレビュー | 1万円家電の殿堂</title>
+<title>NEC VersaPro 9,999円レビュー | 1万円家電の殿堂</title>
 <style>
-  :root { --main: #1a1a1a; --accent: #e63946; --good: #2a9d8f; --bg: #f8f9fa; }
-  body { font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', sans-serif; line-height: 1.8; color: var(--main); background: #fff; max-width: 800px; margin: 0 auto; padding: 0; }
+  /* 基本設定はホームと共通にすると楽です */
+  body { font-family: sans-serif; line-height: 1.8; color: #333; background: #fff; max-width: 800px; margin: 0 auto; padding: 0 20px; }
+  img { max-width: 100%; height: auto; border-radius: 4px; }
   
-  /* 記事ヘッダー */
-  .post-header { padding: 40px 20px; border-bottom: 1px solid #eee; }
-  .post-title { font-size: 2rem; line-height: 1.3; margin-bottom: 20px; }
+  /* 見出し */
+  h1 { font-size: 1.8rem; margin: 40px 0 20px; border-bottom: 4px solid #222; padding-bottom: 10px; }
+  h2 { font-size: 1.4rem; background: #f4f4f4; padding: 15px; border-left: 8px solid #222; margin-top: 50px; }
   
-  /* 画像エリア */
-  .img-container { margin: 30px 0; background: var(--bg); padding: 10px; border-radius: 8px; text-align: center; }
-  .img-container img { max-width: 100%; height: auto; border-radius: 4px; }
-  .img-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
-
-  /* コンテンツ */
-  .content { padding: 20px; }
-  h2 { font-size: 1.5rem; border-left: 6px solid var(--main); padding-left: 15px; margin: 2em 0 1em; background: var(--bg); padding-top: 10px; padding-bottom: 10px; }
-  h3 { font-size: 1.2rem; color: var(--sub); margin-top: 1.5em; border-bottom: 2px solid #eee; }
-
-  /* スペック比較表 */
-  .spec-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+  /* スペック表 */
+  .spec-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
   .spec-table th, .spec-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-  .spec-table th { background: var(--main); color: #fff; width: 30%; }
-  .spec-status { font-weight: bold; color: var(--accent); }
+  .spec-table th { background: #f9f9f9; width: 30%; }
 
-  /* メリット・デメリット対比 */
-  .vs-grid { display: flex; gap: 20px; margin: 30px 0; }
-  .vs-box { flex: 1; padding: 20px; border-radius: 8px; }
-  .vs-bad { background: #fff5f5; border: 1px solid #feb2b2; }
-  .vs-good { background: #f0fff4; border: 1px solid #9ae6b4; }
-  .vs-title { font-weight: bold; margin-bottom: 10px; display: flex; align-items: center; }
+  /* プロフィール（筆者紹介） */
+  .author-box { background: #fdfdfd; border: 1px solid #eee; padding: 25px; margin: 60px 0; display: flex; align-items: center; border-radius: 10px; }
+  .author-img { width: 80px; height: 80px; border-radius: 50%; background: #ccc; margin-right: 20px; flex-shrink: 0; }
+  .author-text { font-size: 0.9rem; }
+  .author-name { font-weight: bold; font-size: 1.1rem; margin-bottom: 5px; display: block; }
 
-  /* 収益化ボタン */
-  .cta-area { background: var(--bg); padding: 40px 20px; text-align: center; border-radius: 12px; margin: 40px 0; }
-  .btn-amazon { display: block; background: #ff9900; color: #fff; text-decoration: none; padding: 20px; border-radius: 8px; font-weight: bold; font-size: 1.3rem; box-shadow: 0 4px 0 #cc7a00; margin-bottom: 15px; }
-  .btn-amazon:active { transform: translateY(4px); box-shadow: none; }
-  .cta-micro { font-size: 0.85rem; color: #666; }
-
+  /* 強調ボックス */
+  .point-box { background: #fff3f3; border: 2px dashed #e63946; padding: 20px; margin: 30px 0; }
+  
+  /* ボタン（収益の心臓部） */
+  .cta-area { text-align: center; margin: 50px 0; background: #fff8e1; padding: 40px 20px; border-radius: 15px; }
+  .btn-amazon { display: inline-block; background: #ff9900; color: #fff; padding: 18px 35px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.2rem; box-shadow: 0 4px 0 #cc7a00; }
+  .btn-amazon:active { transform: translateY(2px); box-shadow: 0 2px 0 #cc7a00; }
 </style>
 </head>
 <body>
 
-<div class="post-header">
-  <span style="color:var(--accent); font-weight:bold;"># 中古PC査定レポート</span>
-  <h1 class="post-title">【9,999円】NEC VersaProの正体。第4世代i5という「骨董品」に金を払う価値はあるのか？</h1>
-  <p>執筆者：1万円家電ハンター（皮肉屋）</p>
-</div>
+  <h1>【9,999円】NEC VersaProレビュー。バッテリー死亡を許せるなら「買い」だ。</h1>
+  
+  <p>「1万円でPCが買える」――その言葉に釣られた哀れな羊たちよ、ようこそ。このNEC VersaProは、確かに1万円だ。しかし、タダより高いものはない。まずはこの「スペック」という名の現実を見て、冷静になってほしい。</p>
 
-<div class="content">
+  <img src="https://via.placeholder.com/800x450" alt="実機写真">
 
-  <div class="img-container">
-    <img src="https://via.placeholder.com/700x400" alt="NEC VersaPro 外観">
-    <p class="img-caption">届いた実機がこちら。昭和のオフィスを感じさせる、重厚（物理）なデザイン。</p>
-  </div>
-
-  <p>
-    「1万円でOffice付きのPCが欲しい」。<br>
-    そんな無邪気な夢を見る初心者を、現実という名の鉄槌で叩き起こすのがこのサイトの役目だ。楽天市場「Harukisu」で売られているこのNEC VersaProは、まさにその試金石と言える。
-  </p>
-
-  <h2>1. 理想と現実のスペック比較</h2>
+  <h2>1. スペック表（嘘偽りなき現実）</h2>
   <table class="spec-table">
-    <tr><th>項目</th><th>販売ページの謳い文句</th><th>皮肉屋の現実チェック</th></tr>
-    <tr><td>CPU</td><td>Core i5 搭載でサクサク！</td><td><span class="spec-status">第4世代（2013年製）</span>。化石だが事務作業ならギリ現役。</td></tr>
-    <tr><td>メモリ</td><td>4GB/8GB選べる</td><td>4GBは地獄。最低<span class="spec-status">8GB</span>にしないとブラウザすら泣く。</td></tr>
-    <tr><td>バッテリー</td><td>中古のため保証外</td><td><span class="spec-status">100%死んでいる</span>と思え。据え置き専用だ。</td></tr>
+    <tr><th>CPU</th><td>Core i5-4200M（第4世代・化石一歩手前）</td></tr>
+    <tr><th>メモリ</th><td>4GB（人権なし。8GB増設を推奨）</td></tr>
+    <tr><th>ストレージ</th><td>SSD 128GB（爆速。唯一の救い）</td></tr>
+    <tr><th>OS</th><td>Windows 11 Pro（無理やり入ってる感）</td></tr>
+    <tr><th>バッテリー</th><td>期待するな。コンセントの奴隷。</td></tr>
   </table>
 
-  <h2>2. 良い点と、許しがたい欠点</h2>
-  <div class="vs-grid">
-    <div class="vs-box vs-bad">
-      <div class="vs-title">💀 許しがたい欠点</div>
-      <ul style="padding-left:20px; font-size:0.9rem;">
-        <li>2.4kgの重量。持ち運ぶのは筋トレマニアだけ。</li>
-        <li>液晶が古い。発色は期待するな。</li>
-        <li>ファンが回ると離陸前の飛行機くらいうるさい。</li>
-      </ul>
-    </div>
-    <div class="vs-box vs-good">
-      <div class="vs-title">✨ 唯一の救い</div>
-      <ul style="padding-left:20px; font-size:0.9rem;">
-        <li>キーボードが打ちやすい。ここは流石のNEC。</li>
-        <li>DVDドライブ内蔵。今どき貴重な円盤再生機。</li>
-        <li>爆速SSD換装済み。起動だけは最新機に勝つ。</li>
-      </ul>
-    </div>
+  <h2>2. このPCの「愛すべきクソな点」</h2>
+  <p>まず、重い。2.4kgだ。これを持ち歩くのは筋トレ以外の何物でもない。そしてバッテリーは、おそらく届いた瞬間に死んでいるか、持って30分だ。</p>
+  
+  <div class="point-box">
+    <strong>皮肉屋の視点：</strong><br>
+    「モバイルノート」だと思って買う奴はバカだ。これはノートの形をした「超省スペースな据え置きデスクトップ」だと思え。
   </div>
 
-  <div class="img-container">
-    <img src="https://via.placeholder.com/700x300" alt="端子類">
-    <p class="img-caption">USBポートの多さだけは異常。もはやUSBハブを買ったと思えば安い（皮肉）。</p>
+  <h2>3. 筆者紹介（この記事を書いた人）</h2>
+  <div id="about-author" class="author-box">
+    <div class="author-img"></div>
+    <div class="author-text">
+      <span class="author-name">1万円家電ハンター・D</span>
+      安物買いの銭失いを7回繰り返し、8回目に悟りを開いた偏屈なPCオタク。メーカーの綺麗な広告よりも、楽天の低評価レビューに真実を見出すのが趣味。愛のムチでガジェットを評価中。
+    </div>
   </div>
-
-  <h2>3. 結論：誰が買うべきか？</h2>
-  <p>
-    （ここにあなたの文章を挿入：例「結論、これはPCではない。1万円の『Office付きブラウジング専用端末』だ。」など）
-  </p>
 
   <div class="cta-area">
-    <p style="margin-bottom:20px; font-weight:bold;">この「使えるゴミ」を使いこなす自信はあるか？</p>
-    <a href="【楽天アフィリエイトURL】" class="btn-amazon">
-      楽天市場で在庫と現実を確認する
-    </a>
-    <p class="cta-micro">※レビューを書くと保証が90日に延びる。「保険」は必ずかけておけ。</p>
+    <p><strong>「不便を楽しめる賢明な変態」だけが、この1万円の恩恵を受けられる。</strong></p>
+    <a href="楽天のアフィリンク" class="btn-amazon">楽天市場で最新の在庫と中古ランクをチェック</a>
+    <p style="font-size: 0.8rem; margin-top: 15px;">※リンク先で「4GBメモリ」を選択すると9,999円になりますが、<br>絶対に「8GB以上」を選んでください。後悔しますよ。</p>
   </div>
-
-  <h2>4. 編集後記</h2>
-  <p>（ここにあなたの自由な感想を）</p>
-
-</div>
 
 </body>
 </html>
