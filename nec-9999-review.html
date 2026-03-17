@@ -3,75 +3,149 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEC VersaPro 9,999円レビュー | 1万円家電の殿堂</title>
+<title>【徹底調査】Harukisuの9,999円NECノートは買いか？ | 1万円家電の殿堂</title>
 <style>
-  /* 基本設定はホームと共通にすると楽です */
-  body { font-family: sans-serif; line-height: 1.8; color: #333; background: #fff; max-width: 800px; margin: 0 auto; padding: 0 20px; }
-  img { max-width: 100%; height: auto; border-radius: 4px; }
+  /* --- プロ級デザインCSS（ここはいじらない） --- */
+  :root { --main-color: #0f172a; --accent-color: #2563eb; --bg-color: #f8fafc; --text-color: #334155; --border-color: #e2e8f0; --danger: #ef4444; --success: #10b981; }
+  body { font-family: 'Helvetica Neue', Arial, sans-serif; color: var(--text-color); background-color: var(--bg-color); line-height: 1.8; margin: 0; padding: 0; }
+  a { color: var(--accent-color); text-decoration: none; }
   
-  /* 見出し */
-  h1 { font-size: 1.8rem; margin: 40px 0 20px; border-bottom: 4px solid #222; padding-bottom: 10px; }
-  h2 { font-size: 1.4rem; background: #f4f4f4; padding: 15px; border-left: 8px solid #222; margin-top: 50px; }
+  /* ヘッダー */
+  .site-header { background: var(--main-color); color: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+  .site-title { font-size: 1.2rem; font-weight: bold; margin: 0; }
+  .site-title span { color: #60a5fa; }
+
+  /* メインコンテンツ枠 */
+  .container { max-width: 800px; margin: 30px auto; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+  
+  /* アイキャッチ画像 */
+  .hero-img { width: 100%; height: 300px; background: #e2e8f0; display: flex; justify-content: center; align-items: center; border-radius: 8px; margin-bottom: 20px; color: #94a3b8; }
+  
+  /* 記事見出し */
+  h1 { font-size: 1.8rem; margin: 0 0 10px 0; line-height: 1.4; color: #0f172a; }
+  .meta-data { font-size: 0.85rem; color: #64748b; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; margin-bottom: 30px; display: flex; gap: 15px; }
+  h2 { font-size: 1.4rem; background: #f1f5f9; padding: 12px 15px; border-left: 5px solid var(--accent-color); margin: 40px 0 20px 0; border-radius: 0 5px 5px 0; }
+  h3 { font-size: 1.2rem; border-bottom: 2px dashed var(--border-color); padding-bottom: 5px; margin: 30px 0 15px 0; }
   
   /* スペック表 */
-  .spec-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-  .spec-table th, .spec-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-  .spec-table th { background: #f9f9f9; width: 30%; }
+  .spec-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95rem; }
+  .spec-table th, .spec-table td { border: 1px solid var(--border-color); padding: 12px; }
+  .spec-table th { background: #f8fafc; width: 30%; text-align: left; }
+  .spec-table td.alert { color: var(--danger); font-weight: bold; }
 
-  /* プロフィール（筆者紹介） */
-  .author-box { background: #fdfdfd; border: 1px solid #eee; padding: 25px; margin: 60px 0; display: flex; align-items: center; border-radius: 10px; }
-  .author-img { width: 80px; height: 80px; border-radius: 50%; background: #ccc; margin-right: 20px; flex-shrink: 0; }
-  .author-text { font-size: 0.9rem; }
-  .author-name { font-weight: bold; font-size: 1.1rem; margin-bottom: 5px; display: block; }
+  /* 装飾ボックス（皮肉と現実） */
+  .box-danger { border: 2px solid #fca5a5; background: #fef2f2; padding: 20px; border-radius: 8px; margin: 20px 0; }
+  .box-danger::before { content: "💀 買ってはいけない絶望の理由"; font-weight: bold; color: var(--danger); display: block; margin-bottom: 10px; border-bottom: 1px solid #fca5a5; padding-bottom: 5px; }
+  .box-success { border: 2px solid #6ee7b7; background: #ecfdf5; padding: 20px; border-radius: 8px; margin: 20px 0; }
+  .box-success::before { content: "💡 唯一の活路（宝に変える方法）"; font-weight: bold; color: var(--success); display: block; margin-bottom: 10px; border-bottom: 1px solid #6ee7b7; padding-bottom: 5px; }
 
-  /* 強調ボックス */
-  .point-box { background: #fff3f3; border: 2px dashed #e63946; padding: 20px; margin: 30px 0; }
-  
-  /* ボタン（収益の心臓部） */
-  .cta-area { text-align: center; margin: 50px 0; background: #fff8e1; padding: 40px 20px; border-radius: 15px; }
-  .btn-amazon { display: inline-block; background: #ff9900; color: #fff; padding: 18px 35px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.2rem; box-shadow: 0 4px 0 #cc7a00; }
-  .btn-amazon:active { transform: translateY(2px); box-shadow: 0 2px 0 #cc7a00; }
+  /* アフィリエイトボタン */
+  .btn-buy { display: block; width: 90%; max-width: 500px; margin: 40px auto; padding: 20px; background: #ea580c; color: #fff; text-align: center; font-weight: bold; font-size: 1.2rem; border-radius: 8px; box-shadow: 0 4px 0 #c2410c; transition: all 0.2s; }
+  .btn-buy:hover { background: #f97316; text-decoration: none; color: #fff; }
+  .btn-buy:active { transform: translateY(4px); box-shadow: 0 0 0 #c2410c; }
+
+  /* この記事を書いた人（権威性） */
+  .author-box { display: flex; gap: 20px; background: #f8fafc; border: 1px solid var(--border-color); padding: 20px; border-radius: 8px; margin-top: 50px; }
+  .author-icon { width: 80px; height: 80px; background: #cbd5e1; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 0.8rem; color: #fff; flex-shrink: 0; }
+  .author-info h4 { margin: 0 0 10px 0; font-size: 1.1rem; }
+  .author-info p { margin: 0; font-size: 0.9rem; color: #475569; }
+
+  /* フッター */
+  .site-footer { background: var(--main-color); color: #94a3b8; text-align: center; padding: 30px 20px; margin-top: 40px; font-size: 0.85rem; }
 </style>
 </head>
 <body>
 
-  <h1>【9,999円】NEC VersaProレビュー。バッテリー死亡を許せるなら「買い」だ。</h1>
-  
-  <p>「1万円でPCが買える」――その言葉に釣られた哀れな羊たちよ、ようこそ。このNEC VersaProは、確かに1万円だ。しかし、タダより高いものはない。まずはこの「スペック」という名の現実を見て、冷静になってほしい。</p>
+  <header class="site-header">
+    <h1 class="site-title"><a href="index.html" style="color:#fff;">1万円家電の<span>殿堂</span></a></h1>
+  </header>
 
-  <img src="https://via.placeholder.com/800x450" alt="実機写真">
-
-  <h2>1. スペック表（嘘偽りなき現実）</h2>
-  <table class="spec-table">
-    <tr><th>CPU</th><td>Core i5-4200M（第4世代・化石一歩手前）</td></tr>
-    <tr><th>メモリ</th><td>4GB（人権なし。8GB増設を推奨）</td></tr>
-    <tr><th>ストレージ</th><td>SSD 128GB（爆速。唯一の救い）</td></tr>
-    <tr><th>OS</th><td>Windows 11 Pro（無理やり入ってる感）</td></tr>
-    <tr><th>バッテリー</th><td>期待するな。コンセントの奴隷。</td></tr>
-  </table>
-
-  <h2>2. このPCの「愛すべきクソな点」</h2>
-  <p>まず、重い。2.4kgだ。これを持ち歩くのは筋トレ以外の何物でもない。そしてバッテリーは、おそらく届いた瞬間に死んでいるか、持って30分だ。</p>
-  
-  <div class="point-box">
-    <strong>皮肉屋の視点：</strong><br>
-    「モバイルノート」だと思って買う奴はバカだ。これはノートの形をした「超省スペースな据え置きデスクトップ」だと思え。
-  </div>
-
-  <h2>3. 筆者紹介（この記事を書いた人）</h2>
-  <div id="about-author" class="author-box">
-    <div class="author-img"></div>
-    <div class="author-text">
-      <span class="author-name">1万円家電ハンター・D</span>
-      安物買いの銭失いを7回繰り返し、8回目に悟りを開いた偏屈なPCオタク。メーカーの綺麗な広告よりも、楽天の低評価レビューに真実を見出すのが趣味。愛のムチでガジェットを評価中。
+  <div class="container">
+    
+    <div class="hero-img">
+      記事のメイン画像（横長）をここに入れる
     </div>
-  </div>
 
-  <div class="cta-area">
-    <p><strong>「不便を楽しめる賢明な変態」だけが、この1万円の恩恵を受けられる。</strong></p>
-    <a href="楽天のアフィリンク" class="btn-amazon">楽天市場で最新の在庫と中古ランクをチェック</a>
-    <p style="font-size: 0.8rem; margin-top: 15px;">※リンク先で「4GBメモリ」を選択すると9,999円になりますが、<br>絶対に「8GB以上」を選んでください。後悔しますよ。</p>
+    <h1>【徹底調査】Harukisuの9,999円NECノートは買いか？スペックと口コミから判明した真実</h1>
+    <div class="meta-data">
+      <span>更新日: 2026.03.15</span>
+      <span>カテゴリ: ノートPC検証</span>
+    </div>
+
+    <p>「1万円でお釣りが来て、WordもExcelも使えて、動画も見たい。」<br>
+    その願い、痛いほど分かります。しかし、楽天市場で異様に売れているこの「Harukisuの9,999円ガチャ」に、魔法を期待してはいけません。</p>
+    <p>この記事では、安物買いの銭失いを防ぐため、ITの現実という冷水をぶっかけながら、このPCの「都合の悪い真実」と「唯一の活用法」を解説します。</p>
+
+    <h2>1. 9,999円の中身（残酷なスペック表）</h2>
+    <table class="spec-table">
+      <tr>
+        <th>CPU</th>
+        <td>Intel Core i5 第4世代（10年以上前の遺産）</td>
+      </tr>
+      <tr>
+        <th>メモリ</th>
+        <td class="alert">標準4GB（人権なし。即メモリ圧死） / 推奨8GB以上</td>
+      </tr>
+      <tr>
+        <th>ストレージ</th>
+        <td>SSD 128GB（唯一の救い。起動は早い）</td>
+      </tr>
+      <tr>
+        <th>バッテリー</th>
+        <td class="alert">ほぼ死亡（ACアダプターという生命維持装置が必須）</td>
+      </tr>
+      <tr>
+        <th>重量</th>
+        <td>約2.4kg（スタバでドヤ顔？腕がちぎれるぞ）</td>
+      </tr>
+    </table>
+
+    <h2>2. 買って笑う人、泣く人</h2>
+    <div class="box-danger">
+      <ul>
+        <li>コンセントがないカフェや学校で使おうとしている情弱</li>
+        <li>動画編集や3Dゲームができると勘違いしている人</li>
+        <li>「新品バッテリー交換可能」の注釈の罠に気づかず文句を言う人</li>
+      </ul>
+      <p style="margin-bottom:0; font-size:0.9rem;">※これらに当てはまるなら、今すぐブラウザを閉じて5万円握りしめて家電量販店へ行け。</p>
+    </div>
+
+    <div class="box-success">
+      <ul>
+        <li>常に机の上に置きっぱなしの「据え置き専用機」と割り切れる人</li>
+        <li>9,999円でOffice 2019（永続版）が手に入るバグに狂喜できる人</li>
+        <li>Windows 11 Pro (25H2) を動かすのが重いと感じたら、ChromeOS FlexやLinux Mintなどの軽量OSを自力でぶち込んで爆速化させる変態</li>
+      </ul>
+      <p style="margin-bottom:0; font-size:0.9rem;">※用途を極限まで絞り、OSの軽量化すら楽しめる玄人にとっては、これ以上コスパの良いおもちゃは他にない。</p>
+    </div>
+
+    <h2>3. 最終決断</h2>
+    <p>このPCは「パソコンに詳しくない初心者がメイン機として買う」なら地獄を見ます。しかし、「Office専用のタイプライター」として割り切れる現実主義者には最高の相棒になります。</p>
+    <p>Harukisuというショップ自体は「1週間以内の返金対応」「レビューで90日保証」など、中古PC屋としては逃げないサポート体制を敷いています。腹を括れる人間だけ、以下のリンクから在庫を漁ってきてください。</p>
+
+    <a href="【ここにもしもアフィリエイトのリンクを貼る】" class="btn-buy">
+      腹を括って楽天市場で在庫を見る
+    </a>
+
+    <div class="author-box">
+      <div class="author-icon">
+        画像
+      </div>
+      <div class="author-info">
+        <h4>この記事を書いた人：1万円家電ハンター</h4>
+        <p>「安物買いの銭失い」を幾度となく経験し、本物を見極める目に目覚めた皮肉屋のPCオタク。RyzenやAthlonの最適化から、古いPCに軽量Linuxを突っ込んで蘇生させることまで、限られた予算で極限のコスパを叩き出すのが生きがい。「消費者を企業の罠にハマらせない」をモットーに運営中。</p>
+      </div>
+    </div>
+
   </div>
+  <footer class="site-footer">
+    <p>&copy; 2026 1万円家電の殿堂 All Rights Reserved.</p>
+    <div style="display:flex; justify-content:center; gap:15px; margin-top:10px;">
+      <a href="#" style="color:#cbd5e1;">運営者情報</a>
+      <a href="#" style="color:#cbd5e1;">免責事項</a>
+      <a href="#" style="color:#cbd5e1;">プライバシーポリシー</a>
+    </div>
+  </footer>
 
 </body>
 </html>
