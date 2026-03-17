@@ -3,148 +3,144 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>【徹底調査】Harukisuの9,999円NECノートは買いか？ | 1万円家電の殿堂</title>
+<title>【9,999円】HarukisuのNEC VersaProは使えるのか？徹底解剖 | 1万円家電の殿堂</title>
 <style>
-  /* --- プロ級デザインCSS（ここはいじらない） --- */
-  :root { --main-color: #0f172a; --accent-color: #2563eb; --bg-color: #f8fafc; --text-color: #334155; --border-color: #e2e8f0; --danger: #ef4444; --success: #10b981; }
-  body { font-family: 'Helvetica Neue', Arial, sans-serif; color: var(--text-color); background-color: var(--bg-color); line-height: 1.8; margin: 0; padding: 0; }
-  a { color: var(--accent-color); text-decoration: none; }
-  .hero-img img {width: 100%;height: auto;display: block;border-radius: 8px;}
-  /* ヘッダー */
-  .site-header { background: var(--main-color); color: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
-  .site-title { font-size: 1.2rem; font-weight: bold; margin: 0; }
-  .site-title span { color: #60a5fa; }
-
-  /* メインコンテンツ枠 */
-  .container { max-width: 800px; margin: 30px auto; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+  /* --- ベース設定（ホームと共通） --- */
+  :root { --main-color: #1e293b; --accent-color: #ea580c; --bg-color: #f8fafc; --text-color: #334155; }
+  body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; line-height: 1.8; color: var(--text-color); background: var(--bg-color); margin: 0; padding: 0; word-wrap: break-word; }
+  a { color: #2563eb; text-decoration: none; }
+  a:hover { text-decoration: underline; color: var(--accent-color); }
   
-  /* アイキャッチ画像 */
-  .hero-img { width: 100%; height: 300px; background: #e2e8f0; display: flex; justify-content: center; align-items: center; border-radius: 8px; margin-bottom: 20px; color: #94a3b8; }
+  /* --- 魔法の画像設定（記事内の画像が絶対に崩れない） --- */
+  img { max-width: 100%; height: auto; display: block; margin: 2em auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+  header { background: var(--main-color); color: #fff; padding: 15px 20px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+  .header-inner { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 1.5rem; font-weight: bold; color: #fff; text-decoration: none; }
+  .nav-menu a { color: #cbd5e1; margin-left: 20px; font-size: 0.95rem; font-weight: bold; }
+
+  /* --- 記事本文の装飾 --- */
+  main { max-width: 800px; margin: 40px auto; padding: 40px; background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+  h1 { font-size: 1.8rem; border-bottom: 3px solid var(--main-color); padding-bottom: 15px; margin-top: 0; line-height: 1.4; }
+  h2 { font-size: 1.4rem; background: #f1f5f9; padding: 12px 15px; border-left: 6px solid var(--main-color); margin-top: 2.5em; border-radius: 4px; }
+  h3 { font-size: 1.2rem; border-bottom: 2px dashed #cbd5e1; padding-bottom: 8px; margin-top: 2em; color: var(--main-color); }
   
-  /* 記事見出し */
-  h1 { font-size: 1.8rem; margin: 0 0 10px 0; line-height: 1.4; color: #0f172a; }
-  .meta-data { font-size: 0.85rem; color: #64748b; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; margin-bottom: 30px; display: flex; gap: 15px; }
-  h2 { font-size: 1.4rem; background: #f1f5f9; padding: 12px 15px; border-left: 5px solid var(--accent-color); margin: 40px 0 20px 0; border-radius: 0 5px 5px 0; }
-  h3 { font-size: 1.2rem; border-bottom: 2px dashed var(--border-color); padding-bottom: 5px; margin: 30px 0 15px 0; }
+  /* --- 警告＆ポイントボックス（クラスを付けるだけ） --- */
+  .box-alert { border: 2px solid #ef4444; background: #fef2f2; padding: 20px; border-radius: 8px; margin: 2em 0; font-weight: bold; color: #991b1b; }
+  .box-alert::before { content: "⚠️ 致命的な現実"; display: block; font-size: 1.1rem; margin-bottom: 10px; border-bottom: 1px solid #fca5a5; padding-bottom: 5px; }
   
-  /* スペック表 */
-  .spec-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95rem; }
-  .spec-table th, .spec-table td { border: 1px solid var(--border-color); padding: 12px; }
-  .spec-table th { background: #f8fafc; width: 30%; text-align: left; }
-  .spec-table td.alert { color: var(--danger); font-weight: bold; }
+  /* --- プロ級のスペック表（<table>を書くだけで自動適用） --- */
+  table { width: 100%; border-collapse: collapse; margin: 2em 0; font-size: 0.95rem; }
+  th, td { padding: 12px 15px; border: 1px solid #e2e8f0; text-align: left; }
+  th { background-color: #f8fafc; width: 30%; font-weight: bold; color: var(--main-color); }
+  tr:nth-child(even) { background-color: #f8fafc; }
 
-  /* 装飾ボックス（皮肉と現実） */
-  .box-danger { border: 2px solid #fca5a5; background: #fef2f2; padding: 20px; border-radius: 8px; margin: 20px 0; }
-  .box-danger::before { content: "💀 買ってはいけない絶望の理由"; font-weight: bold; color: var(--danger); display: block; margin-bottom: 10px; border-bottom: 1px solid #fca5a5; padding-bottom: 5px; }
-  .box-success { border: 2px solid #6ee7b7; background: #ecfdf5; padding: 20px; border-radius: 8px; margin: 20px 0; }
-  .box-success::before { content: "💡 唯一の活路（宝に変える方法）"; font-weight: bold; color: var(--success); display: block; margin-bottom: 10px; border-bottom: 1px solid #6ee7b7; padding-bottom: 5px; }
+  /* --- 収益化ボタン（最強のアフィリエイト導線） --- */
+  .btn-buy { display: block; width: 100%; max-width: 450px; margin: 3em auto; padding: 18px; background: linear-gradient(to bottom, #f97316, #ea580c); color: #fff !important; text-align: center; text-decoration: none !important; font-weight: bold; font-size: 1.3rem; border-radius: 8px; box-shadow: 0 6px 0 #c2410c, 0 10px 10px rgba(0,0,0,0.15); transition: all 0.1s; }
+  .btn-buy:active { transform: translateY(6px); box-shadow: 0 0 0 #c2410c, 0 4px 4px rgba(0,0,0,0.15); }
 
-  /* アフィリエイトボタン */
-  .btn-buy { display: block; width: 90%; max-width: 500px; margin: 40px auto; padding: 20px; background: #ea580c; color: #fff; text-align: center; font-weight: bold; font-size: 1.2rem; border-radius: 8px; box-shadow: 0 4px 0 #c2410c; transition: all 0.2s; }
-  .btn-buy:hover { background: #f97316; text-decoration: none; color: #fff; }
-  .btn-buy:active { transform: translateY(4px); box-shadow: 0 0 0 #c2410c; }
+  /* --- この記事を書いた人（権威性・トラストボックス） --- */
+  .author-box { display: flex; align-items: center; background: #f1f5f9; padding: 25px; border-radius: 12px; margin-top: 4em; border: 1px solid #e2e8f0; }
+  .author-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 20px 0 0; border: 3px solid #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+  .author-info h4 { margin: 0 0 5px 0; font-size: 1.1rem; color: var(--main-color); }
+  .author-info p { margin: 0; font-size: 0.9rem; color: #64748b; line-height: 1.6; }
 
-  /* この記事を書いた人（権威性） */
-  .author-box { display: flex; gap: 20px; background: #f8fafc; border: 1px solid var(--border-color); padding: 20px; border-radius: 8px; margin-top: 50px; }
-  .author-icon { width: 80px; height: 80px; background: #cbd5e1; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 0.8rem; color: #fff; flex-shrink: 0; }
-  .author-info h4 { margin: 0 0 10px 0; font-size: 1.1rem; }
-  .author-info p { margin: 0; font-size: 0.9rem; color: #475569; }
-
-  /* フッター */
-  .site-footer { background: var(--main-color); color: #94a3b8; text-align: center; padding: 30px 20px; margin-top: 40px; font-size: 0.85rem; }
+  /* スマホ対応 */
+  @media (max-width: 600px) {
+    main { padding: 20px; }
+    .author-box { flex-direction: column; text-align: center; }
+    .author-img { margin: 0 0 15px 0; }
+  }
+  footer { background: var(--main-color); color: #94a3b8; text-align: center; padding: 30px 20px; margin-top: 0; }
+  .footer-links a { color: #cbd5e1; margin: 0 10px; font-size: 0.9rem; }
 </style>
 </head>
 <body>
 
-  <header class="site-header">
-    <h1 class="site-title"><a href="index.html" style="color:#fff;">1万円家電の<span>殿堂</span></a></h1>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">1万円家電の<span>殿堂</span></a>
+      <nav class="nav-menu"><a href="index.html">ホームに戻る</a></nav>
+    </div>
   </header>
 
-  <div class="container">
-    
-<div class="hero-img">
-  <img src="画像ーNEC①ートップ.webp" alt="NECノートPC">
-</div>
+  <main>
+    <h1>【辛口判定】9,999円のNEC VersaPro。ゴミか、宝か。楽天市場Harukisuの闇を暴く</h1>
+    <p style="color: #94a3b8; font-size: 0.9rem;">更新日: 2026.03.17</p>
 
-    <h1>【徹底調査】Harukisuの9,999円NECノートは買いか？スペックと口コミから判明した真実</h1>
-    <div class="meta-data">
-      <span>更新日: 2026.03.15</span>
-      <span>カテゴリ: ノートPC検証</span>
+    <div class="box-alert">
+      「パソコン初心者だけど、安く済ませたい」<br>
+      そういう甘い考えでこのPCを買おうとしているなら、今すぐページを閉じて5万円握りしめて家電量販店へ行け。このPCは<strong>「不便を自力でねじ伏せられる変態」</strong>専用の機材だ。
     </div>
 
-    <p>「1万円でお釣りが来て、WordもExcelも使えて、動画も見たい。」<br>
-    その願い、痛いほど分かります。しかし、楽天市場で異様に売れているこの「Harukisuの9,999円ガチャ」に、魔法を期待してはいけません。</p>
-    <p>この記事では、安物買いの銭失いを防ぐため、ITの現実という冷水をぶっかけながら、このPCの「都合の悪い真実」と「唯一の活用法」を解説します。</p>
+    <img src="main-image.jpg" alt="NEC VersaProの筐体イメージ">
 
-    <h2>1. 9,999円の中身（残酷なスペック表）</h2>
-    <table class="spec-table">
-      <tr>
-        <th>CPU</th>
-        <td>Intel Core i5 第4世代（10年以上前の遺産）</td>
-      </tr>
-      <tr>
-        <th>メモリ</th>
-        <td class="alert">標準4GB（人権なし。即メモリ圧死） / 推奨8GB以上</td>
-      </tr>
-      <tr>
-        <th>ストレージ</th>
-        <td>SSD 128GB（唯一の救い。起動は早い）</td>
-      </tr>
-      <tr>
-        <th>バッテリー</th>
-        <td class="alert">ほぼ死亡（ACアダプターという生命維持装置が必須）</td>
-      </tr>
-      <tr>
-        <th>重量</th>
-        <td>約2.4kg（スタバでドヤ顔？腕がちぎれるぞ）</td>
-      </tr>
+    <h2>1. 隠されたスペックの現実（なぜ9,999円なのか）</h2>
+    <p>販売ページに書いてあるスペックを、そのまま信じるほど世の中は優しくない。IT的に冷水をぶっかけながら分解しよう。</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <th>価格帯</th>
+          <td>9,999円〜 [cite: 704]</td>
+        </tr>
+        <tr>
+          <th>CPU</th>
+          <td>Intel 第4世代 Core i5（2013年の遺物） [cite: 711]</td>
+        </tr>
+        <tr>
+          <th>メモリ / ストレージ</th>
+          <td>4GB / 128GB SSD（※オプションで増設必須） [cite: 1370]</td>
+        </tr>
+        <tr>
+          <th>重量 / インターフェース</th>
+          <td>約2.4kg（鈍器並み） / USB3.0×5、VGA搭載 [cite: 836]</td>
+        </tr>
+        <tr>
+          <th>バッテリー状態</th>
+          <td><strong>ほぼ完全死亡（実効容量5%以下、ACアダプタ必須）</strong> [cite: 814, 868]</td>
+        </tr>
+      </tbody>
     </table>
 
-    <h2>2. 買って笑う人、泣く人</h2>
-    <div class="box-danger">
-      <ul>
-        <li>コンセントがないカフェや学校で使おうとしている情弱</li>
-        <li>動画編集や3Dゲームができると勘違いしている人</li>
-        <li>「新品バッテリー交換可能」の注釈の罠に気づかず文句を言う人</li>
-      </ul>
-      <p style="margin-bottom:0; font-size:0.9rem;">※これらに当てはまるなら、今すぐブラウザを閉じて5万円握りしめて家電量販店へ行け。</p>
-    </div>
+    <h3>CPUとメモリ：現代のOSを動かすギリギリのライン</h3>
+    <p>搭載されているのは第4世代Core i5。今となっては歴史展示レベルだが、完全な骨董品というわけでもない。ただし、標準の「メモリ4GB」のままWindows 11を動かすのは狂気の沙汰だ。必ずオプションで8GB以上にしろ。</p>
 
-    <div class="box-success">
-      <ul>
-        <li>常に机の上に置きっぱなしの「据え置き専用機」と割り切れる人</li>
-        <li>9,999円でOffice 2019（永続版）が手に入るバグに狂喜できる人</li>
-        <li>Windows 11 Pro (25H2) を動かすのが重いと感じたら、ChromeOS FlexやLinux Mintなどの軽量OSを自力でぶち込んで爆速化させる変態</li>
-      </ul>
-      <p style="margin-bottom:0; font-size:0.9rem;">※用途を極限まで絞り、OSの軽量化すら楽しめる玄人にとっては、これ以上コスパの良いおもちゃは他にない。</p>
-    </div>
+    <h2>2. このポンコツを「1万円の宝」に変える条件</h2>
+    <p>散々ボロクソに言ったが、<strong>用途を極限まで絞れば</strong>、これほどコスパの良いおもちゃは他にない。</p>
+    <ul>
+      <li><strong>ChromeOS Flexをぶち込む：</strong>Windows 11の重さに耐えられないなら、軽量OSを入れろ。これで「1万円の爆速ブラウジング専用機」に化ける。</li>
+      <li><strong>完全なる据え置き機：</strong>重量2.4kgでバッテリーが死んでいる [cite: 836, 868]。持ち運ぶという概念を捨て、机に固定して事務作業の奴隷として酷使するなら十分戦える。</li>
+      <li><strong>Office 2019永続版の錬金術：</strong>この価格でMicrosoft Office 2019 Home & Businessが付属する [cite: 878]。ソフトを買ったらPCがオマケで付いてきたと思えば計算が合う。</li>
+    </ul>
 
-    <h2>3. 最終決断</h2>
-    <p>このPCは「パソコンに詳しくない初心者がメイン機として買う」なら地獄を見ます。しかし、「Office専用のタイプライター」として割り切れる現実主義者には最高の相棒になります。</p>
-    <p>Harukisuというショップ自体は「1週間以内の返金対応」「レビューで90日保証」など、中古PC屋としては逃げないサポート体制を敷いています。腹を括れる人間だけ、以下のリンクから在庫を漁ってきてください。</p>
+    <h2>3. 最終決断：Harukisuは信用できるか？</h2>
+    <p>中古PCで一番怖いのは「届いた瞬間に終わる個体」だ。しかし、このショップ（Harukisu）の評価は4.21（732件）と異様に高い [cite: 1379]。</p>
+    <p>その理由は「逃げないサポート体制」にある。通常30日の保証が、<strong>商品到着後にレビューを書くだけで「90日」に延長される</strong> [cite: 929, 935]。中古PCの不具合は3ヶ月以内に大体出尽くすため、この延長はデカい。</p>
 
-    <a href="【ここにもしもアフィリエイトのリンクを貼る】" class="btn-buy">
+    <p>このPCは魔法の箱じゃない。ただの「少し古い、安い道具」だ。バッテリーが死んでいようが重かろうが、「1万円でネットとOfficeが動けば文句はない」と腹を括れる現実主義者だけ、下のリンクから在庫を漁ってこい。</p>
+
+    <a href="【もしもアフィリエイトのリンク】" class="btn-buy">
       腹を括って楽天市場で在庫を見る
     </a>
 
     <div class="author-box">
-      <div class="author-icon">
-        画像
-      </div>
+      <img src="avatar.jpg" alt="1万円家電ハンターのアイコン" class="author-img">
       <div class="author-info">
         <h4>この記事を書いた人：1万円家電ハンター</h4>
-        <p>「安物買いの銭失い」を幾度となく経験し、本物を見極める目に目覚めた皮肉屋のPCオタク。RyzenやAthlonの最適化から、古いPCに軽量Linuxを突っ込んで蘇生させることまで、限られた予算で極限のコスパを叩き出すのが生きがい。「消費者を企業の罠にハマらせない」をモットーに運営中。</p>
+        <p>「安物買いの銭失い」を7回経験し、8回目に「本物」を見極める目に目覚めたドケチなPCオタク。最新のAIモデル軽量化やChromeOS Flexの魔改造を愛する。消費者を企業の罠にハマらせないための辛口レビューを執筆中。</p>
       </div>
     </div>
 
-  </div>
-  <footer class="site-footer">
-    <p>&copy; 2026 1万円家電の殿堂 All Rights Reserved.</p>
-    <div style="display:flex; justify-content:center; gap:15px; margin-top:10px;">
-      <a href="#" style="color:#cbd5e1;">運営者情報</a>
-      <a href="#" style="color:#cbd5e1;">免責事項</a>
-      <a href="#" style="color:#cbd5e1;">プライバシーポリシー</a>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="operator.html">運営者情報</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="disclaimer.html">免責事項</a>
     </div>
+    <p>&copy; 2026 1万円家電の殿堂 All Rights Reserved.</p>
   </footer>
 
 </body>
