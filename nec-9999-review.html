@@ -11,13 +11,16 @@
   a { color: #2563eb; text-decoration: none; }
   a:hover { text-decoration: underline; color: var(--accent-color); }
   
-  /* --- 魔法の画像設定（記事内の画像が絶対に崩れない） --- */
-  img { max-width: 100%; height: auto; display: block; margin: 2em auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  /* --- 魔法の画像設定（絶対に縦横比が狂わず、はみ出さない） --- */
+  img { max-width: 100%; height: auto; display: block; margin: 1.5em auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 
+  /* --- ヘッダー＆ナビゲーション --- */
   header { background: var(--main-color); color: #fff; padding: 15px 20px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
   .header-inner { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
   .logo { font-size: 1.5rem; font-weight: bold; color: #fff; text-decoration: none; }
+  .logo span { color: #60a5fa; }
   .nav-menu a { color: #cbd5e1; margin-left: 20px; font-size: 0.95rem; font-weight: bold; }
+  .nav-menu a:hover { color: #fff; }
 
   /* --- 記事本文の装飾 --- */
   main { max-width: 800px; margin: 40px auto; padding: 40px; background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
